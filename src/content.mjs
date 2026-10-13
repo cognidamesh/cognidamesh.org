@@ -11,7 +11,7 @@ export const content = {
     "eyebrow": "A roadmap to 100% open-source AI teams",
     "hero": "Your mission.<br><em>Your open-source AI team.</em>",
     "lead": "Enable people to build their own teams of AI agents for scientific research, OSINT, pentesting and countering disinformation. Cognidamesh shares a roadmap: the essential capabilities, the components to choose and how they fit together.",
-    "explore": "Explore the roadmap",
+    "explore": "Explore the architecture",
     "source": "Discover the use cases",
     "heroNote": "A COMPONENT ROADMAP · OPEN SOURCE · SELF-HOSTED",
     "canvas": [
@@ -33,7 +33,7 @@ export const content = {
     "strip": "Capabilities first. Components second.",
     "stackEyebrow": "02 / The building blocks",
     "stackTitle": "Start with the function.<br>Then choose the brick.",
-    "stackIntro": "A roadmap for assembling your own stack, rather than a ready-to-install code distribution. Each block explains a need and highlights the open-source components we currently favour.",
+    "stackIntro": "A roadmap for assembling your own stack, rather than a ready-to-install code distribution. Each block presents a function, recommended components and alternatives. The goal remains a 100% open-source foundation; proprietary and hosted options are identified.",
     "components": [
       [
         "Coordinate",
@@ -69,9 +69,17 @@ export const content = {
           [
             "Codex CLI",
             "https://github.com/openai/codex"
+          ],
+          [
+            "Claude Code",
+            "https://github.com/anthropics/claude-code"
+          ],
+          [
+            "Bob Shell",
+            "https://bob.ibm.com/docs/shell/getting-started/install-and-setup"
           ]
         ],
-        "Hermes is our main choice for knowledge work; open-source coding runtimes complement it for implementation."
+        "Hermes is our main choice for knowledge work. OpenCode, pi and Codex CLI are open-source coding options. Claude Code and Bob Shell are proprietary alternatives, connected through the available adapters."
       ],
       [
         "Remember",
@@ -99,9 +107,17 @@ export const content = {
           [
             "Camofox",
             "https://github.com/jo-inc/camofox-browser"
+          ],
+          [
+            "CloakBrowser",
+            "https://github.com/CloakHQ/cloakbrowser"
+          ],
+          [
+            "Tavily",
+            "https://docs.tavily.com/documentation/about"
           ]
         ],
-        "SearXNG provides web search; Camofox provides browser access. Hermes connects these capabilities to its research skills."
+        "SearXNG provides self-hosted search; Camofox and CloakBrowser support browsing and collection. Tavily offers a hosted search and extraction API. CloakBrowser’s wrapper is MIT, but its binary has separate terms: these options are not all fully open source."
       ],
       [
         "Reason",
@@ -116,9 +132,19 @@ export const content = {
           [
             "LiteLLM",
             "https://github.com/BerriAI/litellm"
+          ],
+          [
+            "TensorFold",
+            "https://github.com/ashhart/TensorFold"
           ]
         ],
-        "Candidates for this layer: vLLM for serving models and the open-source LiteLLM core for API routing. Model licences and runtime protocols must also match your choices."
+        "vLLM and TensorFold are inference engines to evaluate against your models and hardware. The open-source LiteLLM core provides API routing. Check model formats, memory requirements and compatibility with the agent runtimes.",
+        [
+          "Abliterated models",
+          "These variants, sometimes called “obliterated”, modify model weights to reduce certain refusal behaviours. They can support research into those behaviours and model comparisons in authorised assessments. Fewer refusals do not guarantee accuracy or stronger capabilities: also evaluate tool use and answer quality. The base model’s licence still applies.",
+          "Example model card",
+          "https://huggingface.co/OBLITERATUS/Qwen3-4B-OBLITERATED"
+        ]
       ],
       [
         "Run",
@@ -137,26 +163,59 @@ export const content = {
           [
             "Ansible",
             "https://docs.ansible.com/"
+          ],
+          [
+            "Kubernetes",
+            "https://kubernetes.io/"
+          ],
+          [
+            "OpenShift",
+            "https://www.redhat.com/en/technologies/cloud-computing/openshift"
+          ],
+          [
+            "Terraform",
+            "https://developer.hashicorp.com/terraform"
+          ],
+          [
+            "OpenTofu",
+            "https://opentofu.org/"
           ]
         ],
-        "Podman and Quadlet manage containers without root privileges. Ansible helps reproduce the configuration."
+        "Podman and Quadlet suit a single host; Kubernetes orchestrates containers across a cluster, while OpenShift provides an integrated Kubernetes platform. Terraform defines and provisions infrastructure; Ansible configures systems. Current Terraform releases use the BSL; OpenTofu is the open-source alternative."
+      ],
+      [
+        "Specialise",
+        "Skills & methods",
+        "Give agents a coherent set of capabilities: reusable instructions, procedures, tools and validation criteria. Select skills per role and adapt them to the team’s runtime, sources and field.",
+        "METHOD → EXECUTION → VALIDATION",
+        [
+          [
+            "BMAD",
+            "https://github.com/bmad-code-org/BMAD-METHOD"
+          ],
+          [
+            "Strix",
+            "https://github.com/usestrix/strix"
+          ]
+        ],
+        "BMAD structures software delivery, from planning through architecture and implementation. Strix is an agentic pentesting tool with skills for running assessments, addressing findings and verifying fixes. Curate a set for your mission; formats, tool requirements and integrations vary by runtime."
       ]
     ],
     "archEyebrow": "03 / How the pieces connect",
     "archTitle": "See the connections.",
     "archIntro": "Read each block as a capability, then as a component choice. This is an assembly map for your future team.",
-    "diagramLabel": "ROADMAP / FUNCTIONS AND COMPONENTS",
+    "diagramLabel": "ARCHITECTURE / FUNCTIONS AND COMPONENTS",
     "download": "Download .mmd ↓",
     "legend": [
       "Coordination & execution",
       "Knowledge & services",
       "Arrows show integration paths"
     ],
-    "diagramCaption": "The direct research and memory integrations shown here use Hermes. Paperclip also feeds activity into memory; other runtimes require their own integrations. vLLM and LiteLLM are proposed inference options, to validate with the selected models and API protocols.",
+    "diagramCaption": "Functional map: validate connections for each runtime. Hermes carries the blueprint’s research and memory integrations. Search, inference and hosting alternatives are detailed in the blocks; they are not all required or all open source. BMAD and Strix skills connect according to supported formats and tools.",
     "diagramSource": "Inspect the Mermaid source",
     "runtimeEyebrow": "04 / Choose your agent runtimes",
-    "runtimeTitle": "Open runtimes.<br>Complementary skills.",
-    "runtimeIntro": "The runtime is the agent’s execution engine. Choose open-source tools for research, analysis and implementation, then connect the tools your field requires.",
+    "runtimeTitle": "A choice of runtimes.<br>Complementary skills.",
+    "runtimeIntro": "The runtime is the agent’s execution engine. Assemble a team using the open-source clients or proprietary alternatives below, then add the tools and skills each role needs.",
     "runtimes": [
       [
         "Hermes",
@@ -185,9 +244,23 @@ export const content = {
         "The open-source terminal client is another runtime option. Its client licence does not determine the model licence: pair it with a compatible endpoint and a model that meets your openness requirements.",
         "Open-source CLI · compatible model endpoint",
         "[_]"
+      ],
+      [
+        "Claude Code",
+        "PROPRIETARY OPTION · CODING",
+        "Anthropic’s coding agent can read and edit code, run tools and follow skill workflows. It is a proprietary option to connect through a compatible adapter, with the required model access and vendor terms.",
+        "Code · tools · skills · proprietary licence",
+        ">_"
+      ],
+      [
+        "Bob Shell",
+        "PROPRIETARY OPTION · TERMINAL",
+        "The IBM Bob terminal client supports coding and automation in interactive or non-interactive sessions. Connect it through a compatible adapter with the required access and licence. It is outside the 100% open-source foundation.",
+        "Terminal · automation · proprietary licence",
+        "$>"
       ]
     ],
-    "runtimeNote": "The goal is a 100% open-source team, including its execution and inference layers. Choose model licences accordingly: downloadable weights alone do not establish that a model is open source. Proprietary services are not a prerequisite of this roadmap.",
+    "runtimeNote": "For a 100% open-source team, select runtimes, services and models with licences that meet that goal. Claude Code and Bob Shell are optional proprietary alternatives. A client’s licence does not determine the model’s licence; downloadable weights alone do not make a model open source.",
     "flowEyebrow": "05 / Your assembly roadmap",
     "flowTitle": "From an idea to a team.",
     "flowIntro": "Follow the capabilities in order. Start with a small, useful team and expand from evidence.",
@@ -201,8 +274,8 @@ export const content = {
         "Select an orchestrator, runtimes and a model stack. Check licences, hardware needs and API compatibility."
       ],
       [
-        "Connect tools & memory",
-        "Add sources and specialist tools. Connect shared memory and verify that agents preserve evidence and retrieve the right context."
+        "Connect tools, skills & memory",
+        "Curate the skill set, using BMAD for software delivery or Strix for assessments, then connect sources and memory. Verify evidence preservation, context retrieval and results."
       ],
       [
         "Evaluate & improve",
@@ -211,11 +284,11 @@ export const content = {
     ],
     "deployEyebrow": "06 / Run it on your terms",
     "deployTitle": "Your stack.<br>Your environment.",
-    "deployIntro": "The roadmap can be implemented on infrastructure you control. Start with a Linux server or VM, and use containers where they simplify operation and isolation.",
+    "deployIntro": "Start on a server or VM with Podman, or distribute services across Kubernetes or OpenShift. Define infrastructure with Terraform or OpenTofu, then configure systems with Ansible.",
     "deployTabs": [
       "Server or VM",
-      "Containers",
-      "Open-source choices"
+      "Containers & clusters",
+      "Infrastructure as code"
     ],
     "deploy": [
       [
@@ -229,23 +302,23 @@ export const content = {
         ]
       ],
       [
-        "A MODULAR DEPLOYMENT",
-        "Run the building blocks in containers.",
-        "Use Podman and Quadlet to manage services and persistent data. Define networking, permissions and how local or remote runtime adapters reach each component.",
+        "FROM HOST TO CLUSTER",
+        "Choose your execution scale.",
+        "Podman and Quadlet manage containers on one host. Kubernetes distributes services across a cluster; OpenShift adds an integrated platform around Kubernetes. Adapt networking, persistent volumes and runtime access.",
         [
-          "Podman",
-          "Quadlet",
-          "Persistent storage"
+          "Podman / Quadlet",
+          "Kubernetes",
+          "OpenShift"
         ]
       ],
       [
-        "THE 100% OPEN-SOURCE GOAL",
-        "Keep control of every layer.",
-        "Choose open-source editions, compatible model licences and self-hosted services. The roadmap identifies the components and interfaces to assemble; integration and domain-specific tools remain part of building your team.",
+        "REPRODUCIBLE INFRASTRUCTURE",
+        "Define, provision, configure.",
+        "Terraform or OpenTofu describe the resources to create; Ansible then configures systems and services. Terraform currently uses the source-available BSL; choose OpenTofu for this layer when targeting a fully open-source stack.",
         [
-          "Open components",
-          "Model licences",
-          "Self-hosted services"
+          "Terraform",
+          "OpenTofu",
+          "Ansible"
         ]
       ]
     ],
@@ -253,7 +326,7 @@ export const content = {
     "endEyebrow": "A ROADMAP YOU CAN MAKE YOUR OWN",
     "endTitle": "Choose your mission.<br>Build your collective intelligence.",
     "endText": "The contribution is a shared direction and a map of the necessary components. Assemble, evaluate and evolve your own open-source AI team.",
-    "backTop": "Back to the roadmap ↑",
+    "backTop": "Back to the architecture ↑",
     "footer": "A roadmap for open-source collective intelligence.",
     "repo": "About this roadmap",
     "docs": "Mermaid documentation",
@@ -280,7 +353,7 @@ export const content = {
         "Trace claims to their sources, compare accounts and document contradictions and uncertainty for human review."
       ]
     ],
-    "componentChoice": "Current selection",
+    "componentChoice": "Components & alternatives",
     "componentOptions": "Options to evaluate"
   },
   "fr": {
@@ -295,7 +368,7 @@ export const content = {
     "eyebrow": "Vers des équipes IA 100 % open source",
     "hero": "Votre mission.<br><em>Votre équipe IA open source.</em>",
     "lead": "Permettre à chacun de construire ses équipes d’agents IA pour la recherche scientifique, l’OSINT, le pentesting et la lutte contre la désinformation. Cognidamesh partage une feuille de route : les fonctions essentielles, les composants à choisir et la manière de les assembler.",
-    "explore": "Explorer la feuille de route",
+    "explore": "Explorer l’architecture",
     "source": "Découvrir les usages",
     "heroNote": "UNE FEUILLE DE ROUTE · OPEN SOURCE · AUTOHÉBERGÉ",
     "canvas": [
@@ -317,7 +390,7 @@ export const content = {
     "strip": "Les fonctions d’abord. Les briques ensuite.",
     "stackEyebrow": "02 / Les building blocks",
     "stackTitle": "D’abord la fonction.<br>Ensuite la brique.",
-    "stackIntro": "Nous partageons une feuille de route pour assembler votre stack, pas une distribution de code prête à installer. Chaque bloc explique un besoin et met en avant les composants open source que nous privilégions aujourd’hui.",
+    "stackIntro": "Nous partageons une feuille de route pour assembler votre stack, pas une distribution de code prête à installer. Chaque bloc présente une fonction, les briques conseillées et les alternatives possibles. L’objectif reste un socle 100 % open source ; les options propriétaires ou hébergées sont identifiées.",
     "components": [
       [
         "Coordonner",
@@ -353,9 +426,17 @@ export const content = {
           [
             "Codex CLI",
             "https://github.com/openai/codex"
+          ],
+          [
+            "Claude Code",
+            "https://github.com/anthropics/claude-code"
+          ],
+          [
+            "Bob Shell",
+            "https://bob.ibm.com/docs/shell/getting-started/install-and-setup"
           ]
         ],
-        "Hermes est notre choix principal pour le travail de connaissance ; les runtimes de développement open source le complètent pour l’implémentation."
+        "Hermes est notre choix principal pour le travail de connaissance. OpenCode, pi et Codex CLI sont des options de développement open source. Claude Code et Bob Shell sont des alternatives propriétaires, à connecter selon les adaptateurs disponibles."
       ],
       [
         "Mémoriser",
@@ -383,9 +464,17 @@ export const content = {
           [
             "Camofox",
             "https://github.com/jo-inc/camofox-browser"
+          ],
+          [
+            "CloakBrowser",
+            "https://github.com/CloakHQ/cloakbrowser"
+          ],
+          [
+            "Tavily",
+            "https://docs.tavily.com/documentation/about"
           ]
         ],
-        "SearXNG assure la recherche web ; Camofox permet de parcourir les pages. Hermes relie ces capacités à ses compétences de recherche."
+        "SearXNG fournit la recherche autohébergée ; Camofox et CloakBrowser permettent la navigation et la collecte. Tavily propose une API hébergée de recherche et d’extraction. Le wrapper de CloakBrowser est MIT, mais son binaire a des conditions spécifiques : ces options ne sont pas toutes 100 % open source."
       ],
       [
         "Raisonner",
@@ -400,9 +489,19 @@ export const content = {
           [
             "LiteLLM",
             "https://github.com/BerriAI/litellm"
+          ],
+          [
+            "TensorFold",
+            "https://github.com/ashhart/TensorFold"
           ]
         ],
-        "Pistes pour cette couche : vLLM pour servir les modèles et le cœur open source de LiteLLM pour router les API. Les licences des modèles et les protocoles des runtimes doivent aussi être compatibles."
+        "vLLM et TensorFold sont des moteurs d’inférence à évaluer selon vos modèles et votre matériel. Le cœur open source de LiteLLM assure le routage des API. Vérifiez les formats, la mémoire nécessaire et la compatibilité avec les runtimes.",
+        [
+          "Modèles oblitérés (« abliterated »)",
+          "Ces variantes modifient les poids pour réduire certains comportements de refus. Elles peuvent servir à étudier ces comportements et à comparer des modèles en recherche ou en audit autorisé. Moins de refus ne garantit ni exactitude ni meilleures capacités : évaluez aussi les appels d’outils et la qualité des réponses. La licence du modèle d’origine reste à respecter.",
+          "Exemple de fiche modèle",
+          "https://huggingface.co/OBLITERATUS/Qwen3-4B-OBLITERATED"
+        ]
       ],
       [
         "Héberger",
@@ -421,26 +520,59 @@ export const content = {
           [
             "Ansible",
             "https://docs.ansible.com/"
+          ],
+          [
+            "Kubernetes",
+            "https://kubernetes.io/"
+          ],
+          [
+            "OpenShift",
+            "https://www.redhat.com/en/technologies/cloud-computing/openshift"
+          ],
+          [
+            "Terraform",
+            "https://developer.hashicorp.com/terraform"
+          ],
+          [
+            "OpenTofu",
+            "https://opentofu.org/"
           ]
         ],
-        "Podman et Quadlet gèrent les conteneurs sans privilèges root. Ansible aide à reproduire la configuration."
+        "Podman et Quadlet conviennent à un hôte ; Kubernetes orchestre les conteneurs sur un cluster et OpenShift propose une plateforme Kubernetes intégrée. Terraform décrit et provisionne l’infrastructure, Ansible configure les systèmes. Les versions actuelles de Terraform utilisent la BSL ; OpenTofu est l’alternative open source."
+      ],
+      [
+        "Spécialiser",
+        "Skills et méthodes",
+        "Donner aux agents un ensemble cohérent de compétences : consignes réutilisables, procédures, outils et critères de validation. Sélectionnez les skills par rôle et adaptez-les au runtime, aux sources et au domaine de l’équipe.",
+        "MÉTHODE → EXÉCUTION → VALIDATION",
+        [
+          [
+            "BMAD",
+            "https://github.com/bmad-code-org/BMAD-METHOD"
+          ],
+          [
+            "Strix",
+            "https://github.com/usestrix/strix"
+          ]
+        ],
+        "BMAD structure le travail de développement, du cadrage à l’architecture et à l’implémentation. Strix est un outil de pentesting agentique doté de skills pour piloter les audits, traiter les constats et vérifier les corrections. Composez un set adapté à la mission ; les formats, outils requis et intégrations varient selon le runtime."
       ]
     ],
     "archEyebrow": "03 / L’assemblage des briques",
     "archTitle": "Visualisez les connexions.",
     "archIntro": "Lisez chaque bloc comme une fonction, puis comme un choix de composant. Cette carte guide l’assemblage de votre future équipe.",
-    "diagramLabel": "FEUILLE DE ROUTE / FONCTIONS ET COMPOSANTS",
+    "diagramLabel": "ARCHITECTURE / FONCTIONS ET COMPOSANTS",
     "download": "Télécharger .mmd ↓",
     "legend": [
       "Coordination et exécution",
       "Mémoire et services",
       "Les flèches représentent les intégrations"
     ],
-    "diagramCaption": "Les intégrations directes à la recherche et à la mémoire passent ici par Hermes. Paperclip alimente aussi la mémoire avec son activité ; les autres runtimes nécessitent leurs propres intégrations. vLLM et LiteLLM sont des pistes d’inférence à valider avec les modèles et les protocoles API choisis.",
+    "diagramCaption": "Carte fonctionnelle : les connexions doivent être validées pour chaque runtime. Hermes porte les intégrations de recherche et de mémoire du blueprint. Les alternatives de recherche, d’inférence et d’hébergement sont détaillées dans les blocs ; elles ne sont pas toutes nécessaires ni toutes open source. Les skills BMAD et Strix se raccordent selon les formats et outils pris en charge.",
     "diagramSource": "Consulter la source Mermaid",
     "runtimeEyebrow": "04 / Choisir les runtimes",
-    "runtimeTitle": "Des runtimes ouverts.<br>Des compétences complémentaires.",
-    "runtimeIntro": "Le runtime est le moteur d’exécution de l’agent. Choisissez des outils open source pour la recherche, l’analyse et l’implémentation, puis raccordez les outils de votre domaine.",
+    "runtimeTitle": "Des runtimes au choix.<br>Des compétences complémentaires.",
+    "runtimeIntro": "Le runtime est le moteur d’exécution de l’agent. Composez une équipe avec les clients open source ou les alternatives propriétaires ci-dessous, puis ajoutez les outils et skills nécessaires à chaque rôle.",
     "runtimes": [
       [
         "Hermes",
@@ -469,9 +601,23 @@ export const content = {
         "Le client terminal open source constitue une autre option. Sa licence ne détermine pas celle des modèles : associez-le à un endpoint compatible et à un modèle répondant à vos exigences d’ouverture.",
         "CLI open source · endpoint de modèles compatible",
         "[_]"
+      ],
+      [
+        "Claude Code",
+        "OPTION PROPRIÉTAIRE · DÉVELOPPEMENT",
+        "L’agent de développement d’Anthropic peut lire et modifier le code, exécuter des outils et suivre des workflows de skills. C’est une option propriétaire à intégrer via un adaptateur compatible, avec les accès aux modèles et les conditions du fournisseur.",
+        "Code · outils · skills · licence propriétaire",
+        ">_"
+      ],
+      [
+        "Bob Shell",
+        "OPTION PROPRIÉTAIRE · TERMINAL",
+        "Le client terminal IBM Bob permet de travailler sur le code et d’automatiser des tâches en mode interactif ou non interactif. À intégrer via un adaptateur compatible, avec les accès et la licence nécessaires. Il ne fait pas partie du socle 100 % open source.",
+        "Terminal · automatisation · licence propriétaire",
+        "$>"
       ]
     ],
-    "runtimeNote": "L’objectif est une équipe 100 % open source, jusque dans ses couches d’exécution et d’inférence. Choisissez les licences des modèles en conséquence : des poids téléchargeables ne suffisent pas à qualifier un modèle d’open source. Les services propriétaires ne sont pas un prérequis de cette feuille de route.",
+    "runtimeNote": "Pour une équipe 100 % open source, retenez des runtimes, services et modèles dont les licences répondent à cet objectif. Claude Code et Bob Shell sont des alternatives propriétaires facultatives. La licence d’un client ne détermine pas celle du modèle ; des poids téléchargeables ne suffisent pas à qualifier un modèle d’open source.",
     "flowEyebrow": "05 / Votre feuille de route",
     "flowTitle": "D’une idée à une équipe.",
     "flowIntro": "Avancez dans l’ordre des fonctions. Commencez avec une petite équipe utile et élargissez-la à partir de résultats concrets.",
@@ -485,8 +631,8 @@ export const content = {
         "Sélectionnez un orchestrateur, les runtimes et les modèles. Vérifiez les licences, les besoins matériels et la compatibilité des API."
       ],
       [
-        "Relier outils et mémoire",
-        "Ajoutez les sources et les outils métier. Connectez la mémoire partagée et vérifiez la conservation des preuves et le rappel du bon contexte."
+        "Relier outils, skills et mémoire",
+        "Composez le set de skills, avec BMAD pour le développement ou Strix pour les audits, puis raccordez les sources et la mémoire. Vérifiez la conservation des preuves, le rappel du contexte et les résultats."
       ],
       [
         "Évaluer et améliorer",
@@ -495,11 +641,11 @@ export const content = {
     ],
     "deployEyebrow": "06 / Un environnement à votre main",
     "deployTitle": "Votre stack.<br>Votre environnement.",
-    "deployIntro": "La feuille de route peut être mise en œuvre sur une infrastructure que vous maîtrisez. Commencez sur un serveur Linux ou une VM, et utilisez les conteneurs pour faciliter l’exploitation et l’isolation.",
+    "deployIntro": "Commencez sur un serveur ou une VM avec Podman, ou distribuez les services sur Kubernetes ou OpenShift. Décrivez l’infrastructure avec Terraform ou OpenTofu, puis configurez les systèmes avec Ansible.",
     "deployTabs": [
       "Serveur ou VM",
-      "Conteneurs",
-      "Choix open source"
+      "Conteneurs et clusters",
+      "Infrastructure as code"
     ],
     "deploy": [
       [
@@ -513,23 +659,23 @@ export const content = {
         ]
       ],
       [
-        "UN DÉPLOIEMENT MODULAIRE",
-        "Exécutez les briques en conteneurs.",
-        "Utilisez Podman et Quadlet pour gérer les services et les données persistantes. Définissez le réseau, les permissions et l’accès de chaque adaptateur de runtime aux composants.",
+        "DU SERVEUR AU CLUSTER",
+        "Choisissez votre échelle d’exécution.",
+        "Podman et Quadlet gèrent les conteneurs sur un hôte. Kubernetes répartit les services sur un cluster ; OpenShift ajoute une plateforme intégrée autour de Kubernetes. Adaptez le réseau, les volumes persistants et les accès des runtimes.",
         [
-          "Podman",
-          "Quadlet",
-          "Stockage persistant"
+          "Podman / Quadlet",
+          "Kubernetes",
+          "OpenShift"
         ]
       ],
       [
-        "L’OBJECTIF 100 % OPEN SOURCE",
-        "Gardez la maîtrise de chaque couche.",
-        "Choisissez des éditions open source, des licences de modèles compatibles et des services autohébergés. La feuille de route identifie les composants et les interfaces à assembler ; l’intégration et les outils métier font partie de la construction de votre équipe.",
+        "UNE INFRASTRUCTURE REPRODUCTIBLE",
+        "Décrivez, provisionnez, configurez.",
+        "Terraform ou OpenTofu décrivent les ressources à créer ; Ansible configure ensuite les systèmes et les services. Terraform utilise aujourd’hui la BSL, une licence à code source disponible ; choisissez OpenTofu pour cette couche si vous visez une stack entièrement open source.",
         [
-          "Composants ouverts",
-          "Licences des modèles",
-          "Services autohébergés"
+          "Terraform",
+          "OpenTofu",
+          "Ansible"
         ]
       ]
     ],
@@ -537,7 +683,7 @@ export const content = {
     "endEyebrow": "UNE FEUILLE DE ROUTE À VOUS APPROPRIER",
     "endTitle": "Choisissez votre mission.<br>Construisez votre intelligence collective.",
     "endText": "Notre contribution : une direction commune et une carte des composants nécessaires. Assemblez, évaluez et faites évoluer votre propre équipe IA open source.",
-    "backTop": "Revenir à la feuille de route ↑",
+    "backTop": "Revenir à l’architecture ↑",
     "footer": "Une feuille de route pour l’intelligence collective open source.",
     "repo": "À propos de la feuille de route",
     "docs": "Documentation Mermaid",
@@ -564,7 +710,7 @@ export const content = {
         "Remonter aux sources des affirmations, comparer les récits et documenter contradictions et incertitudes pour une analyse humaine."
       ]
     ],
-    "componentChoice": "Notre sélection actuelle",
+    "componentChoice": "Briques et alternatives",
     "componentOptions": "Pistes à évaluer"
   }
 };
@@ -575,20 +721,23 @@ export function diagram(lang) {
   accDescr: ${fr?'Fonctions et composants pour assembler une équipe IA open source.':'Functions and components for assembling an open-source AI team.'}
   H["${fr?'Mission et pilotage humain':'Mission and human direction'}"] --> P["${fr?'Orchestration · Paperclip':'Orchestration · Paperclip'}"]
   P --> R["${fr?'Exécution et recherche · Hermes':'Execution and research · Hermes'}"]
-  P --> C["${fr?'Développement · OpenCode, pi, Codex CLI':'Coding · OpenCode, pi, Codex CLI'}"]
+  P --> C["${fr?'Développement · OpenCode, pi, Codex CLI, Claude Code, Bob Shell':'Coding · OpenCode, pi, Codex CLI, Claude Code, Bob Shell'}"]
   P -->|${fr?'activité':'activity'}| M["${fr?'Gestion de la mémoire · Hindsight':'Memory management · Hindsight'}"]
   R <--> M
-  R --> W["${fr?'Recherche et collecte · SearXNG, Camofox':'Search and collection · SearXNG, Camofox'}"]
-  R --> G["${fr?'Inférence · vLLM, LiteLLM':'Inference · vLLM, LiteLLM'}"]
+  R --> W["${fr?'Recherche et collecte · SearXNG, Camofox, CloakBrowser, Tavily':'Search and collection · SearXNG, Camofox, CloakBrowser, Tavily'}"]
+  R --> G["${fr?'Inférence · vLLM, TensorFold, LiteLLM':'Inference · vLLM, TensorFold, LiteLLM'}"]
   C --> G
   M --> G
-  subgraph F["Linux · Podman · Quadlet"]
+  S["${fr?'Skills et méthodes · BMAD, Strix':'Skills and methods · BMAD, Strix'}"] -.-> R
+  S -.-> C
+  subgraph F["${fr?'Conteneurs / clusters':'Containers / clusters'}"]
     P
     R
     C
     M
     W
     G
+    S
   end
   classDef lead fill:#d5f879,stroke:#8fa54f,color:#19281f,stroke-width:1px;
   classDef core fill:#263c2e,stroke:#476345,color:#ffffff,stroke-width:1px;
@@ -596,7 +745,7 @@ export function diagram(lang) {
   classDef data fill:#ffffff,stroke:#a6b993,color:#263c2e,stroke-width:1px;
   class H,P lead;
   class R,C core;
-  class W,G service;
+  class W,G,S service;
   class M data;
   style F fill:#f9faf4,stroke:#b3c49d,stroke-dasharray:5 5,color:#476345;
 `;
