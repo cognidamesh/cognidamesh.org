@@ -1,6 +1,6 @@
 # Cognidamesh website
 
-A bilingual roadmap to 100% open-source AI teams for scientific research, OSINT, authorised pentesting and countering disinformation. The website shares an assembly roadmap and component choices, not a ready-to-install stack distribution.
+A bilingual blueprint for building open-source AI agent teams for scientific research, OSINT, authorised pentesting and countering disinformation. The website shares an architectural blueprint and component choices, not a ready-to-install stack distribution.
 
 - `/`: English by default.
 - `/en/`: English.

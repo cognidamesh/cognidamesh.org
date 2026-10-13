@@ -1,19 +1,19 @@
 export const content = {
   "en": {
-    "title": "Cognidamesh — A roadmap to open-source AI teams",
-    "description": "A roadmap to 100% open-source AI teams for scientific research, OSINT, pentesting and countering disinformation. Discover the functions and components to assemble.",
+    "title": "Cognidamesh — A blueprint for open-source AI agent teams",
+    "description": "Cognidamesh is a blueprint for building your own open-source AI agent teams for scientific research, OSINT, pentesting and countering disinformation.",
     "skip": "Skip to content",
     "nav": [
       "The stack",
       "Architecture",
       "Runtimes"
     ],
-    "eyebrow": "A roadmap to 100% open-source AI teams",
+    "eyebrow": "A blueprint for open-source AI agent teams",
     "hero": "Your mission.<br><em>Your open-source AI team.</em>",
-    "lead": "Enable people to build their own teams of AI agents for scientific research, OSINT, pentesting and countering disinformation. Cognidamesh shares a roadmap: the essential capabilities, the components to choose and how they fit together.",
+    "lead": "Cognidamesh is a blueprint for building your own open-source AI agent teams for scientific research, OSINT, pentesting and countering disinformation. It maps the essential capabilities, the components to choose and how they fit together.",
     "explore": "Explore the architecture",
     "source": "Discover the use cases",
-    "heroNote": "A COMPONENT ROADMAP · OPEN SOURCE · SELF-HOSTED",
+    "heroNote": "AN AI TEAM BLUEPRINT · OPEN SOURCE · SELF-HOSTED",
     "canvas": [
       "TEAM BLUEPRINT / 001",
       "HUMAN-DIRECTED",
@@ -33,7 +33,7 @@ export const content = {
     "strip": "Capabilities first. Components second.",
     "stackEyebrow": "02 / The building blocks",
     "stackTitle": "Start with the function.<br>Then choose the brick.",
-    "stackIntro": "A roadmap for assembling your own stack, rather than a ready-to-install code distribution. Each block presents a function, recommended components and alternatives. The goal remains a 100% open-source foundation; proprietary and hosted options are identified.",
+    "stackIntro": "A blueprint for assembling your own stack, rather than a ready-to-install code distribution. Each block presents a function, recommended components and alternatives. The goal remains a 100% open-source foundation; proprietary and hosted options are identified.",
     "components": [
       [
         "Coordinate",
@@ -261,7 +261,7 @@ export const content = {
       ]
     ],
     "runtimeNote": "For a 100% open-source team, select runtimes, services and models with licences that meet that goal. Claude Code and Bob Shell are optional proprietary alternatives. A client’s licence does not determine the model’s licence; downloadable weights alone do not make a model open source.",
-    "flowEyebrow": "05 / Your assembly roadmap",
+    "flowEyebrow": "05 / Put the blueprint into practice",
     "flowTitle": "From an idea to a team.",
     "flowIntro": "Follow the capabilities in order. Start with a small, useful team and expand from evidence.",
     "steps": [
@@ -322,19 +322,19 @@ export const content = {
         ]
       ]
     ],
-    "deployNote": "This is an evolving architectural roadmap. Component choices are recommendations for this blueprint, and should be validated against your own workloads.",
-    "endEyebrow": "A ROADMAP YOU CAN MAKE YOUR OWN",
+    "deployNote": "This architectural blueprint evolves with the ecosystem. Validate the recommended components against your own workloads.",
+    "endEyebrow": "A BLUEPRINT YOU CAN MAKE YOUR OWN",
     "endTitle": "Choose your mission.<br>Build your collective intelligence.",
-    "endText": "The contribution is a shared direction and a map of the necessary components. Assemble, evaluate and evolve your own open-source AI team.",
+    "endText": "Cognidamesh provides a blueprint and a map of the necessary components. Assemble, evaluate and evolve your own open-source AI agent team.",
     "backTop": "Back to the architecture ↑",
-    "footer": "A roadmap for open-source collective intelligence.",
-    "repo": "About this roadmap",
+    "footer": "A blueprint for building open-source AI agent teams.",
+    "repo": "About this blueprint",
     "docs": "Mermaid documentation",
     "diagramAlt": "Architecture diagram showing Paperclip, agent runtimes, research tools, Hindsight memory and model services.",
     "noScript": "The architecture image and page content work without JavaScript. Enable JavaScript to explore the runtime and deployment selectors.",
     "useEyebrow": "01 / What these teams are for",
     "useTitle": "Investigate. Understand.<br>Build knowledge together.",
-    "useIntro": "A shared foundation for different missions. These are the uses the roadmap aims to enable; each team brings its own expertise, data and specialist tools.",
+    "useIntro": "A shared foundation for different missions. These are the uses the blueprint aims to enable; each team brings its own expertise, data and specialist tools.",
     "uses": [
       [
         "Scientific research",
@@ -357,20 +357,20 @@ export const content = {
     "componentOptions": "Options to evaluate"
   },
   "fr": {
-    "title": "Cognidamesh — Une feuille de route pour des équipes IA open source",
-    "description": "Une feuille de route pour des équipes d’agents IA 100 % open source : recherche scientifique, OSINT, pentesting et lutte contre la désinformation. Fonctions, composants et architecture.",
+    "title": "Cognidamesh — Un blueprint pour des équipes d’agents IA open source",
+    "description": "Cognidamesh est un blueprint pour construire ses équipes d’agents IA open source : recherche scientifique, OSINT, pentesting et lutte contre la désinformation.",
     "skip": "Aller au contenu",
     "nav": [
       "La stack",
       "Architecture",
       "Runtimes"
     ],
-    "eyebrow": "Vers des équipes IA 100 % open source",
+    "eyebrow": "Un blueprint pour des équipes d’agents IA open source",
     "hero": "Votre mission.<br><em>Votre équipe IA open source.</em>",
-    "lead": "Permettre à chacun de construire ses équipes d’agents IA pour la recherche scientifique, l’OSINT, le pentesting et la lutte contre la désinformation. Cognidamesh partage une feuille de route : les fonctions essentielles, les composants à choisir et la manière de les assembler.",
+    "lead": "Cognidamesh est un blueprint pour construire ses équipes d’agents IA open source, pour la recherche scientifique, l’OSINT, le pentesting et la lutte contre la désinformation. Il présente les fonctions essentielles, les composants à choisir et la manière de les assembler.",
     "explore": "Explorer l’architecture",
     "source": "Découvrir les usages",
-    "heroNote": "UNE FEUILLE DE ROUTE · OPEN SOURCE · AUTOHÉBERGÉ",
+    "heroNote": "UN BLUEPRINT D’ÉQUIPE IA · OPEN SOURCE · AUTOHÉBERGÉ",
     "canvas": [
       "BLUEPRINT D’ÉQUIPE / 001",
       "PILOTÉ PAR L’HUMAIN",
@@ -390,7 +390,7 @@ export const content = {
     "strip": "Les fonctions d’abord. Les briques ensuite.",
     "stackEyebrow": "02 / Les building blocks",
     "stackTitle": "D’abord la fonction.<br>Ensuite la brique.",
-    "stackIntro": "Nous partageons une feuille de route pour assembler votre stack, pas une distribution de code prête à installer. Chaque bloc présente une fonction, les briques conseillées et les alternatives possibles. L’objectif reste un socle 100 % open source ; les options propriétaires ou hébergées sont identifiées.",
+    "stackIntro": "Nous partageons un blueprint pour assembler votre stack, pas une distribution de code prête à installer. Chaque bloc présente une fonction, les briques conseillées et les alternatives possibles. L’objectif reste un socle 100 % open source ; les options propriétaires ou hébergées sont identifiées.",
     "components": [
       [
         "Coordonner",
@@ -618,7 +618,7 @@ export const content = {
       ]
     ],
     "runtimeNote": "Pour une équipe 100 % open source, retenez des runtimes, services et modèles dont les licences répondent à cet objectif. Claude Code et Bob Shell sont des alternatives propriétaires facultatives. La licence d’un client ne détermine pas celle du modèle ; des poids téléchargeables ne suffisent pas à qualifier un modèle d’open source.",
-    "flowEyebrow": "05 / Votre feuille de route",
+    "flowEyebrow": "05 / Mettre le blueprint en pratique",
     "flowTitle": "D’une idée à une équipe.",
     "flowIntro": "Avancez dans l’ordre des fonctions. Commencez avec une petite équipe utile et élargissez-la à partir de résultats concrets.",
     "steps": [
@@ -679,19 +679,19 @@ export const content = {
         ]
       ]
     ],
-    "deployNote": "Cette feuille de route d’architecture évolue. Les briques retenues sont nos recommandations pour ce blueprint, à valider sur vos propres usages.",
-    "endEyebrow": "UNE FEUILLE DE ROUTE À VOUS APPROPRIER",
+    "deployNote": "Ce blueprint d’architecture évolue avec l’écosystème. Validez les composants recommandés sur vos propres usages.",
+    "endEyebrow": "UN BLUEPRINT À VOUS APPROPRIER",
     "endTitle": "Choisissez votre mission.<br>Construisez votre intelligence collective.",
-    "endText": "Notre contribution : une direction commune et une carte des composants nécessaires. Assemblez, évaluez et faites évoluer votre propre équipe IA open source.",
+    "endText": "Cognidamesh fournit un blueprint et une carte des composants nécessaires. Assemblez, évaluez et faites évoluer votre propre équipe d’agents IA open source.",
     "backTop": "Revenir à l’architecture ↑",
-    "footer": "Une feuille de route pour l’intelligence collective open source.",
-    "repo": "À propos de la feuille de route",
+    "footer": "Un blueprint pour construire ses équipes d’agents IA open source.",
+    "repo": "À propos du blueprint",
     "docs": "Documentation Mermaid",
     "diagramAlt": "Schéma de l’architecture reliant Paperclip, les runtimes d’agents, les outils de recherche, Hindsight et les modèles.",
     "noScript": "Le schéma et le contenu restent accessibles sans JavaScript. Activez JavaScript pour explorer les sélecteurs de runtimes et de déploiement.",
     "useEyebrow": "01 / À quoi servent ces équipes ?",
     "useTitle": "Enquêter. Comprendre.<br>Construire le savoir ensemble.",
-    "useIntro": "Un socle commun pour des missions différentes. Voici les usages que la feuille de route vise à rendre possibles ; chaque équipe y apporte son expertise, ses données et ses outils métier.",
+    "useIntro": "Un socle commun pour des missions différentes. Voici les usages que le blueprint vise à rendre possibles ; chaque équipe y apporte son expertise, ses données et ses outils métier.",
     "uses": [
       [
         "Recherche scientifique",
@@ -717,7 +717,7 @@ export const content = {
 export function diagram(lang) {
  const fr=lang==='fr';
  return `flowchart TB
-  accTitle: Cognidamesh open-source roadmap
+  accTitle: Cognidamesh open-source blueprint
   accDescr: ${fr?'Fonctions et composants pour assembler une équipe IA open source.':'Functions and components for assembling an open-source AI team.'}
   H["${fr?'Mission et pilotage humain':'Mission and human direction'}"] --> P["${fr?'Orchestration · Paperclip':'Orchestration · Paperclip'}"]
   P --> R["${fr?'Exécution et recherche · Hermes':'Execution and research · Hermes'}"]
