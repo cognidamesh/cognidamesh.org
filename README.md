@@ -1,6 +1,6 @@
 # Cognidamesh website
 
-A bilingual, provider-independent presentation of the Cognidamesh AI-team blueprint.
+A bilingual roadmap to 100% open-source AI teams for scientific research, OSINT, authorised pentesting and countering disinformation. The website shares an assembly roadmap and component choices, not a ready-to-install stack distribution.
 
 - `/`: English by default.
 - `/en/`: English.
@@ -23,7 +23,7 @@ Serve `dist/` with a static HTTP server. The content is rendered at build time; 
 
 `src/content.mjs` contains the English and French content and the Mermaid definitions. `src/architecture-en.svg` and `src/architecture-fr.svg` are rendered from those definitions with Mermaid 11.12.0. Regenerate both SVGs when modifying the diagrams.
 
-The blueprint was checked against the deployment specification and Ansible roles on 2026-10-13. It describes the core components and distinguishes the existing single-host implementation from further portability work. No private deployment configuration is included.
+The blueprint was checked against the deployment specification and Ansible roles on 2026-10-13. It presents generic capabilities first, followed by recommended components. Hindsight is the current preferred memory component. vLLM and the open-source LiteLLM core are proposed inference options, not claims about the reference deployment. Runtime and model licences must be evaluated separately. No private deployment configuration is included.
 
 ## Publication
 
