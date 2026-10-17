@@ -1,7 +1,7 @@
 export const content = {
   "en": {
     "title": "Cognidamesh — A blueprint for open-source AI agent teams",
-    "description": "Cognidamesh is a blueprint for building your own open-source AI agent teams for scientific research, OSINT, pentesting and countering disinformation.",
+    "description": "A blueprint for open-source AI agent teams: research, OSINT, pentesting, countering disinformation, administrative and financial management.",
     "skip": "Skip to content",
     "nav": [
       "The stack",
@@ -10,7 +10,7 @@ export const content = {
     ],
     "eyebrow": "A blueprint for open-source AI agent teams",
     "hero": "Your mission.<br><em>Your open-source AI team.</em>",
-    "lead": "Cognidamesh is a blueprint for building your own open-source AI agent teams for scientific research, OSINT, pentesting and countering disinformation. It maps the essential capabilities, the components to choose and how they fit together.",
+    "lead": "Cognidamesh is a blueprint for building your own open-source AI agent teams for scientific research, OSINT, pentesting, countering disinformation, and administrative and financial management. It maps the essential capabilities, the components to choose and how they fit together.",
     "explore": "Explore the architecture",
     "source": "Discover the use cases",
     "heroNote": "AN AI TEAM BLUEPRINT · OPEN SOURCE · SELF-HOSTED",
@@ -141,9 +141,11 @@ export const content = {
         "vLLM and TensorFold are inference engines to evaluate against your models and hardware. The open-source LiteLLM core provides API routing. Check model formats, memory requirements and compatibility with the agent runtimes.",
         [
           "Abliterated models",
-          "These variants, sometimes called “obliterated”, modify model weights to reduce certain refusal behaviours. They can support research into those behaviours and model comparisons in authorised assessments. Fewer refusals do not guarantee accuracy or stronger capabilities: also evaluate tool use and answer quality. The base model’s licence still applies.",
+          "These variants, sometimes called “obliterated”, modify model weights to reduce or remove certain learned refusal behaviours, including restrictions that may censor legitimate requests. Abliteration targets refusal-related directions in the model’s internal representations; it does not guarantee the removal of every restriction or bias. Fewer refusals do not guarantee accuracy or stronger capabilities: evaluate answer quality and tool use. The base model’s licence still applies.",
           "Example model card",
-          "https://huggingface.co/OBLITERATUS/Qwen3-4B-OBLITERATED"
+          "https://huggingface.co/OBLITERATUS/Qwen3-4B-OBLITERATED",
+          "Security belongs in the harness",
+          "The harness — the software that controls the agent’s execution — must enforce security outside the LLM. Add an independent guardrail that assesses the intent and context of requests before execution, then checks proposed actions and tool calls against the user’s permissions and authorised scope. Allow, block or escalate accordingly. Combine this with least-privilege access, sandboxing, audit logs and human approval for sensitive actions. Intent analysis can make mistakes: it complements enforced permissions and isolation, and must not be the only defence."
         ]
       ],
       [
@@ -199,6 +201,23 @@ export const content = {
           ]
         ],
         "BMAD structures software delivery, from planning through architecture and implementation. Strix is an agentic pentesting tool with skills for running assessments, addressing findings and verifying fixes. Curate a set for your mission; formats, tool requirements and integrations vary by runtime."
+      ],
+      [
+        "Adapt",
+        "LLM retraining & fine-tuning",
+        "Adapt a model to your domain, vocabulary and tasks using curated training examples. Keep training separate from production inference.",
+        "DATA → TRAIN → EVALUATE → DEPLOY",
+        [
+          [
+            "Unsloth",
+            "https://github.com/unslothai/unsloth"
+          ],
+          [
+            "Training documentation",
+            "https://unsloth.ai/docs/get-started/fine-tuning-llms-guide"
+          ]
+        ],
+        "Unsloth supports LLM fine-tuning, including LoRA and QLoRA for supported models. Check model and GPU compatibility, dataset rights and model licences. Version datasets and adapters, compare against the base model on a held-out evaluation set, then export to a compatible inference engine. Recheck tool use and harness guardrails before deployment; fine-tuning and abliteration serve different purposes."
       ]
     ],
     "archEyebrow": "03 / How the pieces connect",
@@ -323,9 +342,9 @@ export const content = {
       ]
     ],
     "deployNote": "This architectural blueprint evolves with the ecosystem. Validate the recommended components against your own workloads.",
-    "endEyebrow": "A BLUEPRINT YOU CAN MAKE YOUR OWN",
-    "endTitle": "Choose your mission.<br>Build your collective intelligence.",
-    "endText": "Cognidamesh provides a blueprint and a map of the necessary components. Assemble, evaluate and evolve your own open-source AI agent team.",
+    "endEyebrow": "07 / FROM BLUEPRINT TO YOUR INFRASTRUCTURE",
+    "endTitle": "Want the same architecture?",
+    "endText": "Copy and paste this into your favourite AI coding agent.",
     "backTop": "Back to the architecture ↑",
     "footer": "A blueprint for building open-source AI agent teams.",
     "repo": "About this blueprint",
@@ -351,14 +370,29 @@ export const content = {
       [
         "Countering disinformation",
         "Trace claims to their sources, compare accounts and document contradictions and uncertainty for human review."
+      ],
+      [
+        "Administrative management",
+        "Sort documents, prepare correspondence, track cases and deadlines, and coordinate internal workflows. Keep access scoped to each role and have people validate official submissions."
+      ],
+      [
+        "Financial management",
+        "Prepare budgets, reconcile invoices and transactions, track cash flow and flag discrepancies. Keep supporting records traceable and require human approval for payments and financial commitments."
       ]
     ],
     "componentChoice": "Components & alternatives",
-    "componentOptions": "Options to evaluate"
+    "componentOptions": "Options to evaluate",
+    "bootstrapPrompt": "Read https://cognidamesh.org/blueprint/AGENTS.md and use it to build, test and deploy a similar AI infrastructure in my project. Respect existing project instructions; ask me only for missing requirements, access and deployment approvals.",
+    "bootstrapNote": "The linked AGENTS.md is a public implementation guide in the open Markdown format. Your agent will adapt it to your project, hardware and access. If it cannot read the URL, download the guide and attach it to your request.",
+    "guideLink": "Read or download the implementation guide",
+    "formatLink": "About the AGENTS.md format",
+    "copyPrompt": "Copy the prompt",
+    "copySuccess": "Prompt copied.",
+    "copyFailure": "Automatic copying is unavailable. Select and copy the prompt above manually."
   },
   "fr": {
     "title": "Cognidamesh — Un blueprint pour des équipes d’agents IA open source",
-    "description": "Cognidamesh est un blueprint pour construire ses équipes d’agents IA open source : recherche scientifique, OSINT, pentesting et lutte contre la désinformation.",
+    "description": "Un blueprint pour des équipes IA open source : recherche, OSINT, pentesting, désinformation, gestion administrative et financière.",
     "skip": "Aller au contenu",
     "nav": [
       "La stack",
@@ -367,7 +401,7 @@ export const content = {
     ],
     "eyebrow": "Un blueprint pour des équipes d’agents IA open source",
     "hero": "Votre mission.<br><em>Votre équipe IA open source.</em>",
-    "lead": "Cognidamesh est un blueprint pour construire ses équipes d’agents IA open source, pour la recherche scientifique, l’OSINT, le pentesting et la lutte contre la désinformation. Il présente les fonctions essentielles, les composants à choisir et la manière de les assembler.",
+    "lead": "Cognidamesh est un blueprint pour construire ses équipes d’agents IA open source : recherche scientifique, OSINT, pentesting, lutte contre la désinformation, gestion administrative et financière. Il présente les fonctions essentielles, les composants à choisir et la manière de les assembler.",
     "explore": "Explorer l’architecture",
     "source": "Découvrir les usages",
     "heroNote": "UN BLUEPRINT D’ÉQUIPE IA · OPEN SOURCE · AUTOHÉBERGÉ",
@@ -498,9 +532,11 @@ export const content = {
         "vLLM et TensorFold sont des moteurs d’inférence à évaluer selon vos modèles et votre matériel. Le cœur open source de LiteLLM assure le routage des API. Vérifiez les formats, la mémoire nécessaire et la compatibilité avec les runtimes.",
         [
           "Modèles oblitérés (« abliterated »)",
-          "Ces variantes modifient les poids pour réduire certains comportements de refus. Elles peuvent servir à étudier ces comportements et à comparer des modèles en recherche ou en audit autorisé. Moins de refus ne garantit ni exactitude ni meilleures capacités : évaluez aussi les appels d’outils et la qualité des réponses. La licence du modèle d’origine reste à respecter.",
+          "Ces variantes modifient les poids du LLM pour réduire ou retirer certains comportements de refus appris, notamment des restrictions susceptibles de censurer des demandes légitimes. L’oblitération cible des directions liées au refus dans les représentations internes du modèle ; elle ne garantit pas la suppression de toutes les restrictions ni de tous les biais. Moins de refus ne garantit ni exactitude ni meilleures capacités : évaluez la qualité des réponses et les appels d’outils. La licence du modèle d’origine reste à respecter.",
           "Exemple de fiche modèle",
-          "https://huggingface.co/OBLITERATUS/Qwen3-4B-OBLITERATED"
+          "https://huggingface.co/OBLITERATUS/Qwen3-4B-OBLITERATED",
+          "La sécurité doit être dans le harnais",
+          "Le harnais — le logiciel qui encadre l’exécution de l’agent — doit assurer la sécurité en dehors du LLM. Ajoutez un garde-fou indépendant qui analyse l’intention et le contexte des demandes avant exécution, puis contrôle les actions proposées et les appels d’outils selon les droits de l’utilisateur et le périmètre autorisé. Il autorise, bloque ou demande une validation selon le cas. Complétez-le par des permissions minimales, une exécution isolée, des journaux d’audit et une validation humaine des actions sensibles. L’analyse d’intention peut se tromper : elle complète les permissions et l’isolation effectives, et ne doit pas être la seule défense."
         ]
       ],
       [
@@ -556,6 +592,23 @@ export const content = {
           ]
         ],
         "BMAD structure le travail de développement, du cadrage à l’architecture et à l’implémentation. Strix est un outil de pentesting agentique doté de skills pour piloter les audits, traiter les constats et vérifier les corrections. Composez un set adapté à la mission ; les formats, outils requis et intégrations varient selon le runtime."
+      ],
+      [
+        "Adapter",
+        "Réentraînement et fine-tuning des LLM",
+        "Adapter un modèle à votre domaine, votre vocabulaire et vos tâches avec des exemples d’entraînement sélectionnés. Séparer l’entraînement de l’inférence en production.",
+        "DONNÉES → ENTRAÎNER → ÉVALUER → DÉPLOYER",
+        [
+          [
+            "Unsloth",
+            "https://github.com/unslothai/unsloth"
+          ],
+          [
+            "Documentation d’entraînement",
+            "https://unsloth.ai/docs/get-started/fine-tuning-llms-guide"
+          ]
+        ],
+        "Unsloth permet le fine-tuning des LLM, notamment avec LoRA et QLoRA pour les modèles compatibles. Vérifiez la compatibilité du modèle et des GPU, les droits sur les données et les licences. Versionnez les jeux de données et les adaptateurs, comparez au modèle de base sur un jeu d’évaluation distinct, puis exportez vers un moteur d’inférence compatible. Revérifiez les appels d’outils et les garde-fous du harnais avant déploiement ; fine-tuning et oblitération répondent à des objectifs différents."
       ]
     ],
     "archEyebrow": "03 / L’assemblage des briques",
@@ -680,9 +733,9 @@ export const content = {
       ]
     ],
     "deployNote": "Ce blueprint d’architecture évolue avec l’écosystème. Validez les composants recommandés sur vos propres usages.",
-    "endEyebrow": "UN BLUEPRINT À VOUS APPROPRIER",
-    "endTitle": "Choisissez votre mission.<br>Construisez votre intelligence collective.",
-    "endText": "Cognidamesh fournit un blueprint et une carte des composants nécessaires. Assemblez, évaluez et faites évoluer votre propre équipe d’agents IA open source.",
+    "endEyebrow": "07 / DU BLUEPRINT À VOTRE INFRASTRUCTURE",
+    "endTitle": "Vous voulez avoir la même architecture ?",
+    "endText": "Copiez-collez ceci dans votre agent IA de codage préféré.",
     "backTop": "Revenir à l’architecture ↑",
     "footer": "Un blueprint pour construire ses équipes d’agents IA open source.",
     "repo": "À propos du blueprint",
@@ -708,10 +761,25 @@ export const content = {
       [
         "Lutte contre la désinformation",
         "Remonter aux sources des affirmations, comparer les récits et documenter contradictions et incertitudes pour une analyse humaine."
+      ],
+      [
+        "Gestion administrative",
+        "Classer les documents, préparer les courriers, suivre les dossiers et les échéances, et coordonner les procédures internes. Limiter les accès à chaque rôle et faire valider les démarches officielles par une personne."
+      ],
+      [
+        "Gestion financière",
+        "Préparer les budgets, rapprocher factures et transactions, suivre la trésorerie et signaler les écarts. Conserver la traçabilité des justificatifs et soumettre paiements et engagements financiers à une validation humaine."
       ]
     ],
     "componentChoice": "Briques et alternatives",
-    "componentOptions": "Pistes à évaluer"
+    "componentOptions": "Pistes à évaluer",
+    "bootstrapPrompt": "Lis https://cognidamesh.org/blueprint/AGENTS.md et utilise ce guide pour développer, tester et déployer une infrastructure IA similaire dans mon projet. Respecte les consignes existantes ; demande-moi uniquement les besoins, accès et autorisations de déploiement manquants.",
+    "bootstrapNote": "Le fichier AGENTS.md lié est un guide public d’implémentation au format Markdown ouvert. Votre agent l’adaptera à votre projet, votre matériel et vos accès. S’il ne peut pas lire l’URL, téléchargez le guide et joignez-le à votre demande.",
+    "guideLink": "Lire ou télécharger le guide d’implémentation",
+    "formatLink": "À propos du format AGENTS.md",
+    "copyPrompt": "Copier le prompt",
+    "copySuccess": "Prompt copié.",
+    "copyFailure": "La copie automatique est indisponible. Sélectionnez et copiez manuellement le prompt ci-dessus."
   }
 };
 export function diagram(lang) {

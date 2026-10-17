@@ -1,6 +1,6 @@
 # Cognidamesh website
 
-A bilingual blueprint for building open-source AI agent teams for scientific research, OSINT, authorised pentesting and countering disinformation. The website shares an architectural blueprint and component choices, not a ready-to-install stack distribution.
+A bilingual blueprint for building open-source AI agent teams for scientific research, OSINT, authorised pentesting, countering disinformation, administrative management and financial management. The website shares an architectural blueprint and component choices, not a ready-to-install stack distribution.
 
 - `/`: English by default.
 - `/en/`: English.
@@ -29,4 +29,18 @@ The blueprint was checked against the deployment specification and Ansible roles
 
 GitHub Actions builds and publishes the static website to GitHub Pages on pushes to `main`. Set the Pages source to GitHub Actions and the custom domain to `cognidamesh.org`. DNS must point to GitHub Pages before the TLS certificate can be issued. The build emits a `CNAME`, sitemap, robots file, canonical URLs and language alternates.
 
-The component catalogue also includes optional commercial or source-available choices (Tavily, the CloakBrowser binary, Claude Code, Bob Shell and Terraform). These are identified separately from the fully open-source goal. OpenTofu provides an open-source infrastructure-as-code option. BMAD and Strix illustrate reusable skills and domain workflows. Abliterated models are described as an evaluation choice, not a guarantee of model quality.
+The component catalogue also includes optional commercial or source-available choices (Tavily, the CloakBrowser binary, Claude Code, Bob Shell and Terraform). These are identified separately from the fully open-source goal. OpenTofu provides an open-source infrastructure-as-code option. BMAD and Strix illustrate reusable skills and domain workflows. Abliterated models are described as a way to reduce learned refusals, with independent harness security and intent guardrails required. Unsloth is an optional model fine-tuning component with a separate training and evaluation workflow.
+
+## Build your own infrastructure
+
+The final section on each language page provides a short copyable prompt linking
+to `https://cognidamesh.org/blueprint/AGENTS.md`. The build publishes the English
+implementation guide from `src/blueprint/AGENTS.md` at that URL. It covers component
+selection, harness security, fine-tuning, infrastructure code, target validation
+and deployment. The agent adapts it to the operator's project and existing
+instructions; it is not an automatic installer or a guarantee of agent support.
+
+The repository root `AGENTS.md` contains website contributor instructions. Keep
+it distinct from the public infrastructure guide. Prompt copying uses the browser
+clipboard API, with text selection and manual copying as a fallback. The prompt
+and guide link remain available without JavaScript.

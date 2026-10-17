@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "scripts": {"build": "node build.mjs", "check": "node --check src/app.js && node --check build.mjs"},
+  "scripts": {"build": "node build.mjs", "check": "node --check src/content.mjs && node --check src/app.js && node --check build.mjs"},
   "dependencies": {"mermaid": "11.12.0"},
   "devDependencies": {"esbuild": "0.25.11"}
 }

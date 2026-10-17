@@ -26,3 +26,21 @@ function tabs(selector,render){
  buttons.forEach((b,i)=>{b.addEventListener('click',()=>activate(i));b.addEventListener('keydown',e=>{let n=i;if(['ArrowRight','ArrowDown'].includes(e.key))n=(i+1)%buttons.length;else if(['ArrowLeft','ArrowUp'].includes(e.key))n=(i-1+buttons.length)%buttons.length;else if(e.key==='Home')n=0;else if(e.key==='End')n=buttons.length-1;else return;e.preventDefault();activate(n);buttons[n].focus();});});
 }
 tabs('.runtime-tab',setRuntime);tabs('.deploy-controls button',setDeploy);
+
+const copyButton=document.querySelector('#copy-prompt');
+const promptText=document.querySelector('#bootstrap-prompt');
+const copyStatus=document.querySelector('#copy-status');
+copyButton.hidden=false;
+copyButton.addEventListener('click',async()=>{
+ try{
+  await navigator.clipboard.writeText(promptText.textContent);
+  copyStatus.textContent=c.copySuccess;
+ }catch{
+  const range=document.createRange();
+  range.selectNodeContents(promptText);
+  const selection=window.getSelection();
+  selection.removeAllRanges();
+  selection.addRange(range);
+  copyStatus.textContent=c.copyFailure;
+ }
+});
