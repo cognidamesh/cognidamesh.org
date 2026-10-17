@@ -4,7 +4,7 @@
 
 This repository builds the bilingual Cognidamesh architecture website. It is not
 the deployed AI infrastructure. The public implementation guide is maintained at
-`src/blueprint/AGENTS.md` and published at `/blueprint/AGENTS.md`; its instructions
+`src/blueprint/AGENTS.md` and published at `/agents.md`; its instructions
 apply when an operator adopts it for an infrastructure project, not to website
 maintenance.
 

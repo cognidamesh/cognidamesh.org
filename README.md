@@ -34,7 +34,7 @@ The component catalogue also includes optional commercial or source-available ch
 ## Build your own infrastructure
 
 The final section on each language page provides a short copyable prompt linking
-to `https://cognidamesh.org/blueprint/AGENTS.md`. The build publishes the English
+to `https://cognidamesh.org/agents.md`. The build publishes the English
 implementation guide from `src/blueprint/AGENTS.md` at that URL. It covers component
 selection, harness security, fine-tuning, infrastructure code, target validation
 and deployment. The agent adapts it to the operator's project and existing
@@ -44,3 +44,9 @@ The repository root `AGENTS.md` contains website contributor instructions. Keep
 it distinct from the public infrastructure guide. Prompt copying uses the browser
 clipboard API, with text selection and manual copying as a fallback. The prompt
 and guide link remain available without JavaScript.
+
+An in-page agent compass appears above the hero on every language page. Its static
+links point to the implementation guide, architecture and starter prompt, so they
+remain discoverable without JavaScript. The HTML head also links to the guide with
+`rel="describedby"` and `type="text/markdown"`; this advertises the resource without
+assuming automatic discovery or execution by every coding agent.
