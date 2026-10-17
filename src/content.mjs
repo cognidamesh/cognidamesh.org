@@ -377,7 +377,7 @@ export const content = {
       ],
       [
         "Financial management",
-        "Prepare budgets, reconcile invoices and transactions, track cash flow and flag discrepancies. Keep supporting records traceable and require human approval for payments and financial commitments."
+        "Support investment management in stock markets and cryptocurrencies: monitor markets and portfolios, compare performance and prepare investment decisions. Prepare budgets, reconcile invoices and transactions, track cash flow and flag discrepancies. Keep supporting records traceable and require human approval for payments and financial commitments."
       ]
     ],
     "componentChoice": "Components & alternatives",
@@ -768,7 +768,7 @@ export const content = {
       ],
       [
         "Gestion financière",
-        "Préparer les budgets, rapprocher factures et transactions, suivre la trésorerie et signaler les écarts. Conserver la traçabilité des justificatifs et soumettre paiements et engagements financiers à une validation humaine."
+        "Accompagner la gestion des investissements en bourse et en cryptomonnaies : suivre les marchés et les portefeuilles, comparer les performances et préparer les décisions d’investissement. Préparer les budgets, rapprocher factures et transactions, suivre la trésorerie et signaler les écarts. Conserver la traçabilité des justificatifs et soumettre paiements et engagements financiers à une validation humaine."
       ]
     ],
     "componentChoice": "Briques et alternatives",
