@@ -21,7 +21,8 @@ GPU and VRAM, model and data licences, authentication, network exposure, budget,
 backup needs and permission to provision or deploy. Never invent credentials or
 claim deployment without access to a real target. Keep secrets out of prompts.
 
-Support the selected missions: scientific research, OSINT, authorised pentesting,
+Support the selected missions: software development and reverse engineering,
+scientific research, OSINT, authorised pentesting,
 countering disinformation, administrative management and financial management.
 Start with one complete workflow and add only the services it needs.
 
@@ -39,7 +40,19 @@ Start with one complete workflow and add only the services it needs.
 - Use rootless Podman with Quadlet for a single Linux host; choose Kubernetes or
   OpenShift only when the target calls for a cluster. Prefer OpenTofu for open-source
   provisioning and Ansible for system configuration.
-- Add BMAD or Strix skills only for applicable roles and authorised workflows.
+- Combine reusable skills with tools exposed through the Model Context Protocol
+  (MCP). Add BMAD for software delivery and Strix for authorised security work.
+  Evaluate Scrapling for web extraction, REA for application and binary reverse
+  engineering, Cua for desktop interaction, and Chrome
+  DevTools MCP for browser automation, debugging and performance analysis.
+  Check client/server compatibility, operating-system requirements and licences
+  of external analysis engines. Scope each server's tools and credentials in the
+  harness; use isolated desktop/browser profiles for interaction and testing.
+- For a software-development mission, build an AI software factory spanning
+  requirements, design, implementation, tests, review and deployment. For reverse
+  engineering, define the authorised target and desired behaviour, retain evidence
+  from code and runtime inspection, document interfaces, and validate the resulting
+  implementation for migration, maintenance or interoperability.
 - Offer Unsloth as an optional, isolated LLM fine-tuning workflow. Check current
   model/hardware support; use LoRA or QLoRA when appropriate. Version datasets,
   training configuration and adapters. Keep evaluation data out of training.
@@ -121,6 +134,10 @@ Verify on a real test or deployment target:
   for changed arguments. Test legitimate requests too.
 - Service health, authentication, TLS where exposed, container restart behaviour,
   persistence, isolation, backups, restore and rollback work as documented.
+- Software delivery passes the generated project's build, tests and review checks.
+  Reverse-engineering findings have traceable evidence; any resulting implementation
+  is tested against the documented behaviour. MCP tools respect the same scope and
+  approval boundaries as other tools.
 - Administrative/financial workflows preserve evidence and require the intended
   human sign-off before an external submission or financial action.
 - If training is enabled, a small training/evaluation run produces a versioned
@@ -137,3 +154,8 @@ planned integrations; do not report a successful deployment based only on a buil
 - Agent instruction format: https://agents.md/
 - Unsloth training: https://unsloth.ai/docs/get-started/fine-tuning-llms-guide
 - Example abliterated model: https://huggingface.co/OBLITERATUS/Qwen3-4B-OBLITERATED
+
+- Scrapling: https://github.com/D4Vinci/Scrapling
+- REA: https://github.com/morluto/rea
+- Cua: https://github.com/trycua/cua
+- Chrome DevTools MCP: https://github.com/ChromeDevTools/chrome-devtools-mcp

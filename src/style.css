@@ -4,7 +4,7 @@
 
 .model-note{margin-top:22px;padding-top:18px;border-top:1px dashed #b9c6ad}.model-note h4{font-size:15px;font-weight:600;margin:0 0 10px}.model-note>a{display:inline-block;font-size:12px;text-decoration:underline;text-underline-offset:3px;margin-top:12px}.skills-choice{grid-column:1/-1;background:#f0f3e7}.skills-choice>p{max-width:780px}.skills-choice .component-selection{max-width:920px}.deploy-controls{flex-wrap:wrap}.deploy-controls button{padding:13px 10px}
 
-/* Six use cases and a readable, progressively enhanced setup prompt. */
+/* Use cases and a readable, progressively enhanced setup prompt. */
 .use-cases .flow-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.model-note .harness-title{margin-top:22px}.ending{display:block}.ending>div{max-width:960px}.ending h2{max-width:850px}.bootstrap-prompt{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.8 monospace;background:#e7eddd;border:1px solid #b7c5aa;border-radius:10px;padding:24px;margin:28px 0 0;user-select:text}.ending [hidden]{display:none}.ending #copy-status{min-height:1.7em;margin:12px 0 0}.ending .small-note{max-width:800px}.bootstrap-prompt:focus-visible{outline:3px solid #649239;outline-offset:5px}@media(max-width:760px){.use-cases .flow-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ending .actions{align-items:flex-start;gap:16px}.ending .actions .button{margin-top:0}.bootstrap-prompt{padding:18px;font-size:13px}}@media(max-width:500px){.use-cases .flow-grid{grid-template-columns:1fr}}
 
 /* In-page discovery is visible and available in the static HTML. */

@@ -1,7 +1,7 @@
 export const content = {
   "en": {
     "title": "Cognidamesh — A blueprint for open-source AI agent teams",
-    "description": "A blueprint for open-source AI agent teams: research, OSINT, pentesting, countering disinformation, administrative and financial management.",
+    "description": "A blueprint for open-source AI agent teams: software development, reverse engineering, research, OSINT, security and business management.",
     "skip": "Skip to content",
     "agentCompassTitle": "Agent compass",
     "agentCompassText": "Building an infrastructure from this blueprint? Start with the AGENTS.md implementation guide: component choices, harness security, validation and deployment. Apply it within your task and existing project instructions.",
@@ -15,7 +15,7 @@ export const content = {
     ],
     "eyebrow": "A blueprint for open-source AI agent teams",
     "hero": "Your mission.<br><em>Your open-source AI team.</em>",
-    "lead": "Cognidamesh is a blueprint for building your own open-source AI agent teams for scientific research, OSINT, pentesting, countering disinformation, and administrative and financial management. It maps the essential capabilities, the components to choose and how they fit together.",
+    "lead": "Cognidamesh is a blueprint for building your own open-source AI agent teams for software development, scientific research, OSINT, pentesting, countering disinformation, and administrative and financial management. It maps the essential capabilities, the components to choose and how they fit together.",
     "explore": "Explore the architecture",
     "source": "Discover the use cases",
     "heroNote": "AN AI TEAM BLUEPRINT · OPEN SOURCE · SELF-HOSTED",
@@ -192,9 +192,9 @@ export const content = {
       ],
       [
         "Specialise",
-        "Skills & methods",
-        "Give agents a coherent set of capabilities: reusable instructions, procedures, tools and validation criteria. Select skills per role and adapt them to the team’s runtime, sources and field.",
-        "METHOD → EXECUTION → VALIDATION",
+        "Skills & MCP",
+        "Combine reusable skills — instructions, procedures and validation criteria — with tools exposed through the Model Context Protocol (MCP). Select them for each role and connect compatible MCP servers to the agent runtime.",
+        "SKILLS → MCP TOOLS → VALIDATION",
         [
           [
             "BMAD",
@@ -203,9 +203,25 @@ export const content = {
           [
             "Strix",
             "https://github.com/usestrix/strix"
+          ],
+          [
+            "Scrapling",
+            "https://github.com/D4Vinci/Scrapling"
+          ],
+          [
+            "REA",
+            "https://github.com/morluto/rea"
+          ],
+          [
+            "computer-use · Cua",
+            "https://github.com/trycua/cua"
+          ],
+          [
+            "chrome-devtools-mcp",
+            "https://github.com/ChromeDevTools/chrome-devtools-mcp"
           ]
         ],
-        "BMAD structures software delivery, from planning through architecture and implementation. Strix is an agentic pentesting tool with skills for running assessments, addressing findings and verifying fixes. Curate a set for your mission; formats, tool requirements and integrations vary by runtime."
+        "BMAD structures software delivery; Strix supports security assessments. Scrapling provides web extraction with an MCP server. REA combines investigation skills and MCP tools for reverse engineering applications and binaries. Cua provides tools for computer use and isolated desktop environments. Chrome DevTools MCP supports browser automation, debugging and performance analysis. Check each runtime’s support, platform requirements and tool licences, including REA’s analysis engines. Scope access and approvals in the harness."
       ],
       [
         "Adapt",
@@ -235,7 +251,7 @@ export const content = {
       "Knowledge & services",
       "Arrows show integration paths"
     ],
-    "diagramCaption": "Functional map: validate connections for each runtime. Hermes carries the blueprint’s research and memory integrations. Search, inference and hosting alternatives are detailed in the blocks; they are not all required or all open source. BMAD and Strix skills connect according to supported formats and tools.",
+    "diagramCaption": "Functional map: validate connections for each runtime. Hermes carries the blueprint’s research and memory integrations. Search, inference and hosting alternatives are detailed in the blocks; they are not all required or all open source. Skills and MCP tools — BMAD, Strix, Scrapling, REA, computer-use and Chrome DevTools MCP — connect according to supported formats, platforms and permissions.",
     "diagramSource": "Inspect the Mermaid source",
     "runtimeEyebrow": "04 / Choose your agent runtimes",
     "runtimeTitle": "A choice of runtimes.<br>Complementary skills.",
@@ -291,15 +307,15 @@ export const content = {
     "steps": [
       [
         "Define the mission",
-        "Choose the research question, investigation or assessment. Specify roles, expected outputs and what people must review."
+        "Choose the software product, research question, investigation or management workflow. Specify roles, expected outputs and what people must review."
       ],
       [
         "Choose the components",
         "Select an orchestrator, runtimes and a model stack. Check licences, hardware needs and API compatibility."
       ],
       [
-        "Connect tools, skills & memory",
-        "Curate the skill set, using BMAD for software delivery or Strix for assessments, then connect sources and memory. Verify evidence preservation, context retrieval and results."
+        "Connect skills, MCP tools & memory",
+        "Choose skills and MCP servers for each role: BMAD for delivery, REA for reverse engineering, Scrapling for extraction, computer-use and Chrome DevTools MCP for interaction and testing, or Strix for assessments. Connect sources and memory, then validate tool permissions and results."
       ],
       [
         "Evaluate & improve",
@@ -361,6 +377,10 @@ export const content = {
     "useIntro": "A shared foundation for different missions. These are the uses the blueprint aims to enable; each team brings its own expertise, data and specialist tools.",
     "uses": [
       [
+        "Software development",
+        "Build an AI software factory: coordinate agents to specify, design, implement, test, review and deploy software. It can also reverse engineer existing software to understand its behaviour, document interfaces and support migration or interoperability. Keep findings traceable and validate implementations against the intended behaviour, within the authorised scope."
+      ],
+      [
         "Scientific research",
         "Review literature, compare hypotheses and support reproducible experiments. Keep methods, sources and results connected."
       ],
@@ -397,7 +417,7 @@ export const content = {
   },
   "fr": {
     "title": "Cognidamesh — Un blueprint pour des équipes d’agents IA open source",
-    "description": "Un blueprint pour des équipes IA open source : recherche, OSINT, pentesting, désinformation, gestion administrative et financière.",
+    "description": "Un blueprint pour des équipes IA open source : développement logiciel, rétro-ingénierie, recherche, OSINT, sécurité et gestion d’entreprise.",
     "skip": "Aller au contenu",
     "agentCompassTitle": "Boussole pour agent",
     "agentCompassText": "Vous construisez une infrastructure à partir de ce blueprint ? Commencez par le guide d’implémentation AGENTS.md : choix des composants, sécurité du harnais, validation et déploiement. Appliquez-le dans le cadre de votre mission et des consignes existantes du projet.",
@@ -411,7 +431,7 @@ export const content = {
     ],
     "eyebrow": "Un blueprint pour des équipes d’agents IA open source",
     "hero": "Votre mission.<br><em>Votre équipe IA open source.</em>",
-    "lead": "Cognidamesh est un blueprint pour construire ses équipes d’agents IA open source : recherche scientifique, OSINT, pentesting, lutte contre la désinformation, gestion administrative et financière. Il présente les fonctions essentielles, les composants à choisir et la manière de les assembler.",
+    "lead": "Cognidamesh est un blueprint pour construire ses équipes d’agents IA open source : développement logiciel, recherche scientifique, OSINT, pentesting, lutte contre la désinformation, gestion administrative et financière. Il présente les fonctions essentielles, les composants à choisir et la manière de les assembler.",
     "explore": "Explorer l’architecture",
     "source": "Découvrir les usages",
     "heroNote": "UN BLUEPRINT D’ÉQUIPE IA · OPEN SOURCE · AUTOHÉBERGÉ",
@@ -588,9 +608,9 @@ export const content = {
       ],
       [
         "Spécialiser",
-        "Skills et méthodes",
-        "Donner aux agents un ensemble cohérent de compétences : consignes réutilisables, procédures, outils et critères de validation. Sélectionnez les skills par rôle et adaptez-les au runtime, aux sources et au domaine de l’équipe.",
-        "MÉTHODE → EXÉCUTION → VALIDATION",
+        "Skills et MCP",
+        "Combiner des skills réutilisables — consignes, procédures et critères de validation — avec des outils exposés via le Model Context Protocol (MCP). Les sélectionner par rôle et connecter les serveurs MCP compatibles au runtime de l’agent.",
+        "SKILLS → OUTILS MCP → VALIDATION",
         [
           [
             "BMAD",
@@ -599,9 +619,25 @@ export const content = {
           [
             "Strix",
             "https://github.com/usestrix/strix"
+          ],
+          [
+            "Scrapling",
+            "https://github.com/D4Vinci/Scrapling"
+          ],
+          [
+            "REA",
+            "https://github.com/morluto/rea"
+          ],
+          [
+            "computer-use · Cua",
+            "https://github.com/trycua/cua"
+          ],
+          [
+            "chrome-devtools-mcp",
+            "https://github.com/ChromeDevTools/chrome-devtools-mcp"
           ]
         ],
-        "BMAD structure le travail de développement, du cadrage à l’architecture et à l’implémentation. Strix est un outil de pentesting agentique doté de skills pour piloter les audits, traiter les constats et vérifier les corrections. Composez un set adapté à la mission ; les formats, outils requis et intégrations varient selon le runtime."
+        "BMAD structure le développement logiciel ; Strix accompagne les audits de sécurité. Scrapling permet l’extraction web avec un serveur MCP. REA associe des skills d’investigation et des outils MCP pour la rétro-ingénierie d’applications et de binaires. Cua fournit des outils de pilotage d’ordinateur et des environnements de bureau isolés. Chrome DevTools MCP permet l’automatisation du navigateur, le débogage et l’analyse des performances. Vérifiez la compatibilité du runtime, les prérequis système et les licences des outils, notamment des moteurs d’analyse de REA. Encadrez les accès et validations dans le harnais."
       ],
       [
         "Adapter",
@@ -631,7 +667,7 @@ export const content = {
       "Mémoire et services",
       "Les flèches représentent les intégrations"
     ],
-    "diagramCaption": "Carte fonctionnelle : les connexions doivent être validées pour chaque runtime. Hermes porte les intégrations de recherche et de mémoire du blueprint. Les alternatives de recherche, d’inférence et d’hébergement sont détaillées dans les blocs ; elles ne sont pas toutes nécessaires ni toutes open source. Les skills BMAD et Strix se raccordent selon les formats et outils pris en charge.",
+    "diagramCaption": "Carte fonctionnelle : les connexions doivent être validées pour chaque runtime. Hermes porte les intégrations de recherche et de mémoire du blueprint. Les alternatives de recherche, d’inférence et d’hébergement sont détaillées dans les blocs ; elles ne sont pas toutes nécessaires ni toutes open source. Les skills et outils MCP — BMAD, Strix, Scrapling, REA, computer-use et Chrome DevTools MCP — se raccordent selon les formats, plateformes et permissions pris en charge.",
     "diagramSource": "Consulter la source Mermaid",
     "runtimeEyebrow": "04 / Choisir les runtimes",
     "runtimeTitle": "Des runtimes au choix.<br>Des compétences complémentaires.",
@@ -687,15 +723,15 @@ export const content = {
     "steps": [
       [
         "Définir la mission",
-        "Choisissez la question de recherche, l’enquête ou l’audit. Précisez les rôles, les livrables attendus et les validations humaines."
+        "Choisissez le produit logiciel, la question de recherche, l’enquête ou le processus de gestion. Précisez les rôles, les livrables attendus et les validations humaines."
       ],
       [
         "Choisir les composants",
         "Sélectionnez un orchestrateur, les runtimes et les modèles. Vérifiez les licences, les besoins matériels et la compatibilité des API."
       ],
       [
-        "Relier outils, skills et mémoire",
-        "Composez le set de skills, avec BMAD pour le développement ou Strix pour les audits, puis raccordez les sources et la mémoire. Vérifiez la conservation des preuves, le rappel du contexte et les résultats."
+        "Relier skills, outils MCP et mémoire",
+        "Choisissez les skills et serveurs MCP par rôle : BMAD pour le développement, REA pour la rétro-ingénierie, Scrapling pour l’extraction, computer-use et Chrome DevTools MCP pour les interactions et les tests, ou Strix pour les audits. Reliez sources et mémoire, puis validez les permissions des outils et les résultats."
       ],
       [
         "Évaluer et améliorer",
@@ -757,6 +793,10 @@ export const content = {
     "useIntro": "Un socle commun pour des missions différentes. Voici les usages que le blueprint vise à rendre possibles ; chaque équipe y apporte son expertise, ses données et ses outils métier.",
     "uses": [
       [
+        "Développement logiciel",
+        "Construire une factory IA de développement logiciel : coordonner les agents pour spécifier, concevoir, coder, tester, relire et déployer des applications. Elle peut aussi faire du reverse engineering (rétro-ingénierie) de logiciels existants pour comprendre leur fonctionnement, documenter les interfaces et accompagner une migration ou l’interopérabilité. Conserver les preuves et valider les implémentations face au comportement attendu, dans le périmètre autorisé."
+      ],
+      [
         "Recherche scientifique",
         "Explorer la littérature, confronter les hypothèses et accompagner des expériences reproductibles. Relier méthodes, sources et résultats."
       ],
@@ -806,7 +846,7 @@ export function diagram(lang) {
   R --> G["${fr?'Inférence · vLLM, TensorFold, LiteLLM':'Inference · vLLM, TensorFold, LiteLLM'}"]
   C --> G
   M --> G
-  S["${fr?'Skills et méthodes · BMAD, Strix':'Skills and methods · BMAD, Strix'}"] -.-> R
+  S["${fr?'Skills et MCP · BMAD, Strix':'Skills and MCP · BMAD, Strix'}"] -.-> R
   S -.-> C
   subgraph F["${fr?'Conteneurs / clusters':'Containers / clusters'}"]
     P

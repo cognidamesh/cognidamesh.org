@@ -1,6 +1,6 @@
 # Cognidamesh website
 
-A bilingual blueprint for building open-source AI agent teams for scientific research, OSINT, authorised pentesting, countering disinformation, administrative management and financial management. The website shares an architectural blueprint and component choices, not a ready-to-install stack distribution.
+A bilingual blueprint for building open-source AI agent teams for software development and reverse engineering, scientific research, OSINT, authorised pentesting, countering disinformation, administrative management and financial management. The website shares an architectural blueprint and component choices, not a ready-to-install stack distribution.
 
 - `/`: English by default.
 - `/en/`: English.
@@ -29,7 +29,7 @@ The blueprint was checked against the deployment specification and Ansible roles
 
 GitHub Actions builds and publishes the static website to GitHub Pages on pushes to `main`. Set the Pages source to GitHub Actions and the custom domain to `cognidamesh.org`. DNS must point to GitHub Pages before the TLS certificate can be issued. The build emits a `CNAME`, sitemap, robots file, canonical URLs and language alternates.
 
-The component catalogue also includes optional commercial or source-available choices (Tavily, the CloakBrowser binary, Claude Code, Bob Shell and Terraform). These are identified separately from the fully open-source goal. OpenTofu provides an open-source infrastructure-as-code option. BMAD and Strix illustrate reusable skills and domain workflows. Abliterated models are described as a way to reduce learned refusals, with independent harness security and intent guardrails required. Unsloth is an optional model fine-tuning component with a separate training and evaluation workflow.
+The component catalogue also includes optional commercial or source-available choices (Tavily, the CloakBrowser binary, Claude Code, Bob Shell and Terraform). These are identified separately from the fully open-source goal. OpenTofu provides an open-source infrastructure-as-code option. The Skills & MCP catalogue combines BMAD and Strix workflows with Scrapling, REA, Cua, and Chrome DevTools MCP. The software-development use case presents an AI software factory covering delivery and evidence-based reverse engineering. Abliterated models are described as a way to reduce learned refusals, with independent harness security and intent guardrails required. Unsloth is an optional model fine-tuning component with a separate training and evaluation workflow.
 
 ## Build your own infrastructure
 
