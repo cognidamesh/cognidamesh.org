@@ -251,7 +251,7 @@ export const content = {
       "Knowledge & services",
       "Arrows show integration paths"
     ],
-    "diagramCaption": "Functional map: validate connections for each runtime. Hermes carries the blueprint’s research and memory integrations. Search, inference and hosting alternatives are detailed in the blocks; they are not all required or all open source. Skills and MCP tools — BMAD, Strix, Scrapling, REA, computer-use and Chrome DevTools MCP — connect according to supported formats, platforms and permissions.",
+    "diagramCaption": "Functional map: validate connections for each runtime. Hermes carries the research integrations; Hermes and coding agents share Hindsight memory. Search, inference and hosting alternatives are detailed in the blocks; they are not all required or all open source. Skills and MCP tools — BMAD, Strix, Scrapling, REA, computer-use and Chrome DevTools MCP — connect according to supported formats, platforms and permissions. The harness checks intent and enforces permissions, isolation and approvals. Coding and reverse-engineering agents drive Unsloth retraining in a workflow separate from production inference; only evaluated models move to inference.",
     "diagramSource": "Inspect the Mermaid source",
     "runtimeEyebrow": "04 / Choose your agent runtimes",
     "runtimeTitle": "A choice of runtimes.<br>Complementary skills.",
@@ -370,7 +370,7 @@ export const content = {
     "footer": "A blueprint for building open-source AI agent teams.",
     "repo": "About this blueprint",
     "docs": "Mermaid documentation",
-    "diagramAlt": "Architecture diagram showing Paperclip, agent runtimes, research tools, Hindsight memory and model services.",
+    "diagramAlt": "Architecture diagram connecting human direction and Paperclip to agent runtimes, harness guardrails, skills and MCP tools, research services, Hindsight memory and inference. Coding and reverse-engineering agents drive Unsloth retraining and send evaluated models to inference.",
     "noScript": "The architecture image and page content work without JavaScript. Enable JavaScript to explore the runtime and deployment selectors.",
     "useEyebrow": "01 / What these teams are for",
     "useTitle": "Investigate. Understand.<br>Build knowledge together.",
@@ -667,7 +667,7 @@ export const content = {
       "Mémoire et services",
       "Les flèches représentent les intégrations"
     ],
-    "diagramCaption": "Carte fonctionnelle : les connexions doivent être validées pour chaque runtime. Hermes porte les intégrations de recherche et de mémoire du blueprint. Les alternatives de recherche, d’inférence et d’hébergement sont détaillées dans les blocs ; elles ne sont pas toutes nécessaires ni toutes open source. Les skills et outils MCP — BMAD, Strix, Scrapling, REA, computer-use et Chrome DevTools MCP — se raccordent selon les formats, plateformes et permissions pris en charge.",
+    "diagramCaption": "Carte fonctionnelle : les connexions doivent être validées pour chaque runtime. Hermes porte les intégrations de recherche ; Hermes et les agents de codage partagent la mémoire Hindsight. Les alternatives de recherche, d’inférence et d’hébergement sont détaillées dans les blocs ; elles ne sont pas toutes nécessaires ni toutes open source. Les skills et outils MCP — BMAD, Strix, Scrapling, REA, computer-use et Chrome DevTools MCP — se raccordent selon les formats, plateformes et permissions pris en charge. Le harnais contrôle les intentions et impose permissions, isolation et validations. Les agents de développement et de rétro-ingénierie pilotent le réentraînement Unsloth dans un workflow distinct de l’inférence de production ; seuls les modèles évalués passent en inférence.",
     "diagramSource": "Consulter la source Mermaid",
     "runtimeEyebrow": "04 / Choisir les runtimes",
     "runtimeTitle": "Des runtimes au choix.<br>Des compétences complémentaires.",
@@ -786,7 +786,7 @@ export const content = {
     "footer": "Un blueprint pour construire ses équipes d’agents IA open source.",
     "repo": "À propos du blueprint",
     "docs": "Documentation Mermaid",
-    "diagramAlt": "Schéma de l’architecture reliant Paperclip, les runtimes d’agents, les outils de recherche, Hindsight et les modèles.",
+    "diagramAlt": "Schéma reliant le pilotage humain et Paperclip aux runtimes d’agents, aux garde-fous du harnais, aux skills et outils MCP, aux services de recherche, à la mémoire Hindsight et à l’inférence. Les agents de développement et de rétro-ingénierie pilotent le réentraînement Unsloth et transmettent les modèles évalués à l’inférence.",
     "noScript": "Le schéma et le contenu restent accessibles sans JavaScript. Activez JavaScript pour explorer les sélecteurs de runtimes et de déploiement.",
     "useEyebrow": "01 / À quoi servent ces équipes ?",
     "useTitle": "Enquêter. Comprendre.<br>Construire le savoir ensemble.",
@@ -835,36 +835,42 @@ export const content = {
 export function diagram(lang) {
  const fr=lang==='fr';
  return `flowchart TB
-  accTitle: Cognidamesh open-source blueprint
-  accDescr: ${fr?'Fonctions et composants pour assembler une équipe IA open source.':'Functions and components for assembling an open-source AI team.'}
+  accTitle: ${fr?'Architecture open source de Cognidamesh':'Cognidamesh open-source blueprint'}
+  accDescr: ${content[lang].diagramAlt}
   H["${fr?'Mission et pilotage humain':'Mission and human direction'}"] --> P["${fr?'Orchestration · Paperclip':'Orchestration · Paperclip'}"]
-  P --> R["${fr?'Exécution et recherche · Hermes':'Execution and research · Hermes'}"]
-  P --> C["${fr?'Développement · OpenCode, pi, Codex CLI, Claude Code, Bob Shell':'Coding · OpenCode, pi, Codex CLI, Claude Code, Bob Shell'}"]
+  P --> A["${fr?'Harnais · Contrôle des intentions<br/>Permissions, isolation, validations':'Harness · Intent checks<br/>Permissions, isolation, approvals'}"]
+  A --> C["${fr?'Développement et rétro-ingénierie<br/>OpenCode, pi, Codex CLI<br/>Claude Code, Bob Shell':'Coding and reverse engineering<br/>OpenCode, pi, Codex CLI<br/>Claude Code, Bob Shell'}"]
+  A --> R["${fr?'Exécution et recherche<br/>Hermes':'Execution and research<br/>Hermes'}"]
   P -->|${fr?'activité':'activity'}| M["${fr?'Gestion de la mémoire · Hindsight':'Memory management · Hindsight'}"]
   R <--> M
-  R --> W["${fr?'Recherche et collecte · SearXNG, Camofox, CloakBrowser, Tavily':'Search and collection · SearXNG, Camofox, CloakBrowser, Tavily'}"]
+  C <--> M
+  R --> W["${fr?'Recherche et collecte':'Search and collection'}<br/>SearXNG, Camofox<br/>CloakBrowser, Tavily"]
   R --> G["${fr?'Inférence · vLLM, TensorFold, LiteLLM':'Inference · vLLM, TensorFold, LiteLLM'}"]
   C --> G
   M --> G
-  S["${fr?'Skills et MCP · BMAD, Strix':'Skills and MCP · BMAD, Strix'}"] -.-> R
+  S["${fr?'Skills et outils MCP':'Skills and MCP tools'}<br/>BMAD, Strix, Scrapling, REA<br/>computer-use · Cua<br/>Chrome DevTools MCP"] -.-> R
   S -.-> C
-  subgraph F["${fr?'Conteneurs / clusters':'Containers / clusters'}"]
+  C -->|${fr?'pilote':'drives'}| T["${fr?'Réentraînement · Unsloth<br/>Données → entraînement → évaluation':'Retraining · Unsloth<br/>Data → training → evaluation'}"]
+  T -->|${fr?'modèle validé':'validated model'}| G
+  subgraph F["Services"]
     P
+    A
     R
     C
     M
     W
     G
     S
+    T
   end
-  classDef lead fill:#d5f879,stroke:#8fa54f,color:#19281f,stroke-width:1px;
+  classDef coordination fill:#d5f879,stroke:#8fa54f,color:#19281f,stroke-width:1px;
   classDef core fill:#263c2e,stroke:#476345,color:#ffffff,stroke-width:1px;
   classDef service fill:#e9efdf,stroke:#b3c49d,color:#263c2e,stroke-width:1px;
   classDef data fill:#ffffff,stroke:#a6b993,color:#263c2e,stroke-width:1px;
-  class H,P lead;
+  class H,P,A coordination;
   class R,C core;
   class W,G,S service;
-  class M data;
+  class M,T data;
   style F fill:#f9faf4,stroke:#b3c49d,stroke-dasharray:5 5,color:#476345;
 `;
 }
