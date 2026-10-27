@@ -379,6 +379,10 @@ export const content = {
     "useIntro": "A shared foundation for different missions. These are the uses the blueprint aims to enable; each team brings its own expertise, data and specialist tools.",
     "uses": [
       [
+        "From a human team to an AI agent team",
+        "Observe how a team works: map tasks, tools, decisions and hand-offs, then capture its expertise and recurring workflows. Generate a complementary AI agent team with defined roles, skills, tool access and shared memory. Test it on real tasks and progressively automate as much of the workflow as possible, measuring time saved and output quality while people supervise exceptions and key decisions."
+      ],
+      [
         "Software development",
         "Build an AI software factory: coordinate agents to specify, design, implement, test, review and deploy software. It can also reverse engineer existing software to understand its behaviour, document interfaces and support migration or interoperability. Keep findings traceable and validate implementations against the intended behaviour, within the authorised scope."
       ],
@@ -405,6 +409,10 @@ export const content = {
       [
         "Financial management",
         "Support investment management in stock markets and cryptocurrencies: monitor markets and portfolios, compare performance and prepare investment decisions. Prepare budgets, reconcile invoices and transactions, track cash flow and flag discrepancies. Keep supporting records traceable and require human approval for payments and financial commitments."
+      ],
+      [
+        "Agentic commerce",
+        "Assemble an AI agent team to turn a shopping brief into a coordinated purchasing workflow: a discovery agent finds products, an analyst compares prices, availability and delivery terms, and an order agent prepares checkout. A follow-up agent tracks deliveries and handles return requests. Share context across the team, work within the buyer’s budget and preferences, and require approval before placing orders."
       ]
     ],
     "componentChoice": "Components & alternatives",
@@ -797,6 +805,10 @@ export const content = {
     "useIntro": "Un socle commun pour des missions différentes. Voici les usages que le blueprint vise à rendre possibles ; chaque équipe y apporte son expertise, ses données et ses outils métier.",
     "uses": [
       [
+        "D’une équipe humaine à une équipe d’agents IA",
+        "Observer le travail d’une équipe : cartographier les tâches, les outils, les décisions et les passages de relais, puis formaliser son savoir-faire et ses processus récurrents. Générer une équipe d’agents IA complémentaires, avec des rôles, des skills, des accès aux outils et une mémoire partagée. La tester sur des tâches réelles et automatiser progressivement le maximum du travail, en mesurant le temps gagné et la qualité des résultats, avec une supervision humaine des exceptions et des décisions clés."
+      ],
+      [
         "Développement logiciel",
         "Construire une factory IA de développement logiciel : coordonner les agents pour spécifier, concevoir, coder, tester, relire et déployer des applications. Elle peut aussi faire du reverse engineering (rétro-ingénierie) de logiciels existants pour comprendre leur fonctionnement, documenter les interfaces et accompagner une migration ou l’interopérabilité. Conserver les preuves et valider les implémentations face au comportement attendu, dans le périmètre autorisé."
       ],
@@ -823,6 +835,10 @@ export const content = {
       [
         "Gestion financière",
         "Accompagner la gestion des investissements en bourse et en cryptomonnaies : suivre les marchés et les portefeuilles, comparer les performances et préparer les décisions d’investissement. Préparer les budgets, rapprocher factures et transactions, suivre la trésorerie et signaler les écarts. Conserver la traçabilité des justificatifs et soumettre paiements et engagements financiers à une validation humaine."
+      ],
+      [
+        "Commerce agentique",
+        "Assembler une équipe d’agents IA pour transformer un besoin d’achat en un processus coordonné : un agent recherche les produits, un analyste compare les prix, les disponibilités et les conditions de livraison, et un agent prépare la commande. Un agent de suivi surveille les livraisons et traite les demandes de retour. Partager le contexte entre les agents, respecter le budget et les préférences de l’acheteur, et faire approuver les commandes avant leur envoi."
       ]
     ],
     "componentChoice": "Briques et alternatives",
