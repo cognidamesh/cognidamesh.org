@@ -1,7 +1,7 @@
 export const content = {
   "en": {
     "title": "Cognidamesh — A blueprint for open-source AI agent teams",
-    "description": "A blueprint for open-source AI agent teams: software development, reverse engineering, research, OSINT, security and business management.",
+    "description": "A blueprint for open-source AI agent teams: software development, reverse engineering, research, intelligence service (OSINT), security and business management.",
     "skip": "Skip to content",
     "prerequisiteTitle": "Before you begin",
     "prerequisiteText": "Before implementing this blueprint, you must first master all the skills covered in the <a href=\"https://roadmap.sh/ai-engineer\">AI Engineer roadmap on roadmap.sh</a>.",
@@ -17,7 +17,7 @@ export const content = {
     ],
     "eyebrow": "A blueprint for open-source AI agent teams",
     "hero": "Your mission.<br><em>Your open-source AI team.</em>",
-    "lead": "Cognidamesh is a blueprint for building your own open-source AI agent teams for software development, scientific research, OSINT, pentesting, countering disinformation, and administrative and financial management. It maps the essential capabilities, the components to choose and how they fit together.",
+    "lead": "Cognidamesh is a blueprint for building your own open-source AI agent teams for software development, scientific research, intelligence service (OSINT), pentesting, countering disinformation, and administrative and financial management. It maps the essential capabilities, the components to choose and how they fit together.",
     "explore": "Explore the architecture",
     "source": "Discover the use cases",
     "heroNote": "AN AI TEAM BLUEPRINT · OPEN SOURCE · SELF-HOSTED",
@@ -370,6 +370,7 @@ export const content = {
     "endText": "Copy and paste this into your favourite AI coding agent.",
     "backTop": "Back to the architecture ↑",
     "footer": "A blueprint for building open-source AI agent teams.",
+    "license": "Licensed under the Apache License 2.0",
     "repo": "About this blueprint",
     "docs": "Mermaid documentation",
     "diagramAlt": "Architecture diagram connecting human direction and Paperclip to agent runtimes, harness guardrails, skills and MCP tools, research services, Hindsight memory and inference. Coding and reverse-engineering agents drive Unsloth retraining and send evaluated models to inference.",
@@ -391,7 +392,7 @@ export const content = {
         "Review literature, compare hypotheses and support reproducible experiments. Keep methods, sources and results connected."
       ],
       [
-        "OSINT",
+        "Intelligence service (OSINT)",
         "Collect public information, cross-check sources and build documented investigations with traceable evidence."
       ],
       [
@@ -427,7 +428,7 @@ export const content = {
   },
   "fr": {
     "title": "Cognidamesh — Un blueprint pour des équipes d’agents IA open source",
-    "description": "Un blueprint pour des équipes IA open source : développement logiciel, rétro-ingénierie, recherche, OSINT, sécurité et gestion d’entreprise.",
+    "description": "Un blueprint pour des équipes IA open source : développement logiciel, rétro-ingénierie, recherche, service de renseignement (OSINT), sécurité et gestion d’entreprise.",
     "skip": "Aller au contenu",
     "prerequisiteTitle": "Avant de commencer",
     "prerequisiteText": "Avant de mettre en place ce blueprint, vous devez d’abord maîtriser toutes les compétences présentées dans la <a href=\"https://roadmap.sh/ai-engineer\">feuille de route AI Engineer de roadmap.sh</a>.",
@@ -443,7 +444,7 @@ export const content = {
     ],
     "eyebrow": "Un blueprint pour des équipes d’agents IA open source",
     "hero": "Votre mission.<br><em>Votre équipe IA open source.</em>",
-    "lead": "Cognidamesh est un blueprint pour construire ses équipes d’agents IA open source : développement logiciel, recherche scientifique, OSINT, pentesting, lutte contre la désinformation, gestion administrative et financière. Il présente les fonctions essentielles, les composants à choisir et la manière de les assembler.",
+    "lead": "Cognidamesh est un blueprint pour construire ses équipes d’agents IA open source : développement logiciel, recherche scientifique, service de renseignement (OSINT), pentesting, lutte contre la désinformation, gestion administrative et financière. Il présente les fonctions essentielles, les composants à choisir et la manière de les assembler.",
     "explore": "Explorer l’architecture",
     "source": "Découvrir les usages",
     "heroNote": "UN BLUEPRINT D’ÉQUIPE IA · OPEN SOURCE · AUTOHÉBERGÉ",
@@ -796,6 +797,7 @@ export const content = {
     "endText": "Copiez-collez ceci dans votre agent IA de codage préféré.",
     "backTop": "Revenir à l’architecture ↑",
     "footer": "Un blueprint pour construire ses équipes d’agents IA open source.",
+    "license": "Publié sous licence Apache 2.0",
     "repo": "À propos du blueprint",
     "docs": "Documentation Mermaid",
     "diagramAlt": "Schéma reliant le pilotage humain et Paperclip aux runtimes d’agents, aux garde-fous du harnais, aux skills et outils MCP, aux services de recherche, à la mémoire Hindsight et à l’inférence. Les agents de développement et de rétro-ingénierie pilotent le réentraînement Unsloth et transmettent les modèles évalués à l’inférence.",
@@ -817,7 +819,7 @@ export const content = {
         "Explorer la littérature, confronter les hypothèses et accompagner des expériences reproductibles. Relier méthodes, sources et résultats."
       ],
       [
-        "OSINT",
+        "Service de renseignement (OSINT)",
         "Collecter l’information publique, recouper les sources et construire des enquêtes documentées, avec des preuves traçables."
       ],
       [

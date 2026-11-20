@@ -22,7 +22,7 @@ backup needs and permission to provision or deploy. Never invent credentials or
 claim deployment without access to a real target. Keep secrets out of prompts.
 
 Support the selected missions: software development and reverse engineering,
-scientific research, OSINT, authorised pentesting,
+scientific research, intelligence service (OSINT), authorised pentesting,
 countering disinformation, administrative management and financial management.
 Start with one complete workflow and add only the services it needs.
 

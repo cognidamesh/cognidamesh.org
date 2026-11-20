@@ -1,6 +1,6 @@
 # Cognidamesh website
 
-A bilingual blueprint for building open-source AI agent teams for software development and reverse engineering, scientific research, OSINT, authorised pentesting, countering disinformation, administrative management and financial management. The website shares an architectural blueprint and component choices, not a ready-to-install stack distribution.
+A bilingual blueprint for building open-source AI agent teams for software development and reverse engineering, scientific research, intelligence service (OSINT), authorised pentesting, countering disinformation, administrative management and financial management. The website shares an architectural blueprint and component choices, not a ready-to-install stack distribution.
 
 - `/`: English by default.
 - `/en/`: English.
