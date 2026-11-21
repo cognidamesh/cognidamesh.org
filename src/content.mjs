@@ -428,7 +428,7 @@ export const content = {
   },
   "fr": {
     "title": "Cognidamesh — Un blueprint pour des équipes d’agents IA open source",
-    "description": "Un blueprint pour des équipes IA open source : développement logiciel, rétro-ingénierie, recherche, service de renseignement (OSINT), sécurité et gestion d’entreprise.",
+    "description": "Un blueprint pour des équipes IA open source : développement logiciel, rétro-ingénierie, recherche, service de renseignements (OSINT), sécurité et gestion d’entreprise.",
     "skip": "Aller au contenu",
     "prerequisiteTitle": "Avant de commencer",
     "prerequisiteText": "Avant de mettre en place ce blueprint, vous devez d’abord maîtriser toutes les compétences présentées dans la <a href=\"https://roadmap.sh/ai-engineer\">feuille de route AI Engineer de roadmap.sh</a>.",
@@ -444,7 +444,7 @@ export const content = {
     ],
     "eyebrow": "Un blueprint pour des équipes d’agents IA open source",
     "hero": "Votre mission.<br><em>Votre équipe IA open source.</em>",
-    "lead": "Cognidamesh est un blueprint pour construire ses équipes d’agents IA open source : développement logiciel, recherche scientifique, service de renseignement (OSINT), pentesting, lutte contre la désinformation, gestion administrative et financière. Il présente les fonctions essentielles, les composants à choisir et la manière de les assembler.",
+    "lead": "Cognidamesh est un blueprint pour construire ses équipes d’agents IA open source : développement logiciel, recherche scientifique, service de renseignements (OSINT), pentesting, lutte contre la désinformation, gestion administrative et financière. Il présente les fonctions essentielles, les composants à choisir et la manière de les assembler.",
     "explore": "Explorer l’architecture",
     "source": "Découvrir les usages",
     "heroNote": "UN BLUEPRINT D’ÉQUIPE IA · OPEN SOURCE · AUTOHÉBERGÉ",
@@ -819,7 +819,7 @@ export const content = {
         "Explorer la littérature, confronter les hypothèses et accompagner des expériences reproductibles. Relier méthodes, sources et résultats."
       ],
       [
-        "Service de renseignement (OSINT)",
+        "Service de renseignements (OSINT)",
         "Collecter l’information publique, recouper les sources et construire des enquêtes documentées, avec des preuves traçables."
       ],
       [
