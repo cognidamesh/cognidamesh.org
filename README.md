@@ -17,7 +17,7 @@ npm run check
 npm run build
 ```
 
-Serve `dist/` with a static HTTP server. The content is rendered at build time; JavaScript powers only the runtime and deployment selectors. Mermaid diagrams are prerendered as SVG and their `.mmd` sources are downloadable. No external fonts, analytics, API credentials or backend are required.
+Serve `dist/` with a static HTTP server. The content is rendered at build time; JavaScript powers only the runtime and deployment selectors, prompt copying and optional WebMCP tool registration. Mermaid diagrams are prerendered as SVG and their `.mmd` sources are downloadable. No external fonts, analytics, API credentials or backend are required.
 
 ## Content
 
@@ -49,4 +49,7 @@ An in-page agent compass appears above the hero on every language page. Its stat
 links point to the implementation guide, architecture and starter prompt, so they
 remain discoverable without JavaScript. The HTML head also links to the guide with
 `rel="describedby"` and `type="text/markdown"`; this advertises the resource without
-assuming automatic discovery or execution by every coding agent.
+assuming automatic discovery or execution by every coding agent. In browsers
+exposing `navigator.modelContext` or `document.modelContext`, the page also
+registers client-side WebMCP tools to inspect the blueprint, fetch `/agents.md`,
+switch runtime and deployment tabs, and copy the starter prompt.

@@ -19,7 +19,7 @@ changes, verify the affected behaviour in a browser, including failure handling.
 ## Files and conventions
 
 - `src/content.mjs`: English and French copy, plus Mermaid diagram definitions.
-- `src/app.js`: runtime/deployment selectors and prompt copying.
+- `src/app.js`: runtime/deployment selectors, prompt copying and WebMCP tools.
 - `src/style.css`: responsive layout and visual styling.
 - `build.mjs`: static HTML generation and public asset copying.
 - `src/architecture-*.svg`: prerendered diagrams. Regenerate both if their Mermaid
